@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: OWASP [GROUPNAME]
+title: OWASP Mobile Top 10
 tags: example-tag
 level: 4
 type: 
