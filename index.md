@@ -23,29 +23,29 @@ Feel free to visit [the mailing list](https://groups.google.com/a/owasp.org/foru
 
 # Top 10 Mobile Risks - Final List 2016
 
-- M1: Improper Platform Usage
-- M2: Insecure Data Storage
-- M3: Insecure Communication
-- M4: Insecure Authentication
-- M5: Insufficient Cryptography
-- M6: Insecure Authorization
-- M7: Client Code Quality
-- M8: Code Tampering
-- M9: Reverse Engineering
-- M10: Extraneous Functionality
+- [M1: Improper Platform Usage](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage)
+- [M2: Insecure Data Storage](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M2-Insecure_Data_Storage)
+- [M3: Insecure Communication](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M3-Insecure_Communication)
+- [M4: Insecure Authentication](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M4-Insecure_Authentication)
+- [M5: Insufficient Cryptography](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M5-Insufficient_Cryptography)
+- [M6: Insecure Authorization](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M6-Insecure_Authorization)
+- [M7: Client Code Quality](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M7-Poor_Code_Quality)
+- [M8: Code Tampering](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M8-Code_Tampering)
+- [M9: Reverse Engineering](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M9-Reverse_Engineering)
+- [M10: Extraneous Functionality](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M10-Extraneous_Functionality)
 
 # Top 10 Mobile Risks - Final List 2014
 
-- M1: Weak Server Side Controls
-- M2: Insecure Data Storage
-- M3: Insufficient Transport Layer Protection
-- M4: Unintended Data Leakage
-- M5: Poor Authorization and Authentication
-- M6: Broken Cryptography
-- M7: Client Side Injection
-- M8: Security Decisions Via Untrusted Inputs
-- M9: Improper Session Handling
-- M10: Lack of Binary Protections
+- [M1: Weak Server Side Controls](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M1)
+- [M2: Insecure Data Storage](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M2)
+- [M3: Insufficient Transport Layer Protection](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M3)
+- [M4: Unintended Data Leakage](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M4)
+- [M5: Poor Authorization and Authentication](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M5)
+- [M6: Broken Cryptography](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M6)
+- [M7: Client Side Injection](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M7)
+- [M8: Security Decisions Via Untrusted Inputs](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M8)
+- [M9: Improper Session Handling](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M9)
+- [M10: Lack of Binary Protections](https://wiki.owasp.org/index.php/Mobile_Top_10_2014-M10)
 
 # Project Methodology
 
