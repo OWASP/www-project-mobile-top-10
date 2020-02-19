@@ -23,16 +23,16 @@ Feel free to visit [the mailing list](https://groups.google.com/a/owasp.org/foru
 
 # Top 10 Mobile Risks - Final List 2016
 
-- [M1: Improper Platform Usage](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage)
-- [M2: Insecure Data Storage](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M2-Insecure_Data_Storage)
-- [M3: Insecure Communication](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M3-Insecure_Communication)
-- [M4: Insecure Authentication](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M4-Insecure_Authentication)
-- [M5: Insufficient Cryptography](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M5-Insufficient_Cryptography)
-- [M6: Insecure Authorization](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M6-Insecure_Authorization)
-- [M7: Client Code Quality](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M7-Poor_Code_Quality)
-- [M8: Code Tampering](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M8-Code_Tampering)
-- [M9: Reverse Engineering](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M9-Reverse_Engineering)
-- [M10: Extraneous Functionality](https://wiki.owasp.org/index.php/Mobile_Top_10_2016-M10-Extraneous_Functionality)
+- [M1: Improper Platform Usage](/2016-risks/m1-improper-platform-usage)
+- [M2: Insecure Data Storage](/2016-risks/m2-insecure-data-storage)
+- [M3: Insecure Communication](/2016-risks/m3-insecure-communication)
+- [M4: Insecure Authentication](/2016-risks/m4-insecure-authentication)
+- [M5: Insufficient Cryptography](/2016-risks/m5-insufficient-cryptography)
+- [M6: Insecure Authorization](/2016-risks/m6-insecure-authorization)
+- [M7: Client Code Quality](/2016-risks/m7-client-code-quality)
+- [M8: Code Tampering](/2016-risks/m8-code-tampering)
+- [M9: Reverse Engineering](/2016-risks/m9-reverse-engineering)
+- [M10: Extraneous Functionality](/2016-risks/m10-extraneous-functionality)
 
 # Top 10 Mobile Risks - Final List 2014
 
