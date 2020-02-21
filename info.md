@@ -1,17 +1,7 @@
-### [GROUPNAME] Information
-* [Flagship Project](#)
-* [Tool Project](#)
-* [Version 2.8.0](#)
-* [Builder](#)
-* [Breaker](#)
+### Other OWASP Mobile Projects
 
-### Downloads or Social Links
-* [Download](#)
-* [Meetup](#)
+* [OWASP Mobile Security Testing Guide](https://owasp.org/www-project-mobile-security-testing-guide/)
 
 ### Code Repository
-* [repo](#)
-
-### Change Log
-* [changes](#)
+* [Github Repository](https://github.com/OWASP/www-project-mobile-top-10)
 
