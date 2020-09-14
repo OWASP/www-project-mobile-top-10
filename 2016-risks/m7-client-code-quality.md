@@ -55,7 +55,7 @@ In general, code quality issues can be avoided by doing the following:
 
 - Maintain consistent coding patterns that everyone in the organization agrees upon;
 - Write code that is easy to read and well-documented;
-- When using buffers, always validate that the the lengths of any incoming buffer data will not exceed the length of the target buffer;
+- When using buffers, always validate that the lengths of any incoming buffer data will not exceed the length of the target buffer;
 - Via automation, identify buffer overflows and memory leaks through the use of third-party static analysis tools; and
 - Prioritize solving buffer overflows and memory leaks over other 'code quality' issues.
 
