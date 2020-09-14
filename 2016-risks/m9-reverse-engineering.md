@@ -46,7 +46,7 @@ The business impacts from reverse engineering are quite varied. They include the
 
 # Am I Vulnerable To 'Reverse Engineering'?
 
-Generally, most applications are susceptible to reverse engineering due to the inherent nature of code. Most languages used to write apps today are rich in metadata that greatly aides a programmer in debugging the app. This same capability also grealy aides an attacker in understanding how the app works.
+Generally, most applications are susceptible to reverse engineering due to the inherent nature of code. Most languages used to write apps today are rich in metadata that greatly aides a programmer in debugging the app. This same capability also greatly aides an attacker in understanding how the app works.
 An app is said to be susceptible to reverse engineering if an attacker can do any of the following things:
 
 - Clearly understand the contents of a binary's string table
