@@ -4,7 +4,7 @@ layout: col-sidebar
 title: OWASP Mobile Top 10
 tags:  acknowledgements-tag controls-tag
 level: 4
-type: 
+type: documentation
 
 ---
 
