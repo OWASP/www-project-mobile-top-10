@@ -8,7 +8,7 @@ title: "M10: Extraneous Functionality"
 
 **Application Specific**
 
-Typically, an attacker seeks to understand extraneous functionality within a mobile app in order to discover hidden functionality in in backend systems. The attacker will typically exploit extraneous functionality directly from their own systems without any involvement by end-users. 
+Typically, an attacker seeks to understand extraneous functionality within a mobile app in order to discover hidden functionality in backend systems. The attacker will typically exploit extraneous functionality directly from their own systems without any involvement by end-users. 
 # Attack Vectors	
 
 **Exploitability EASY**
