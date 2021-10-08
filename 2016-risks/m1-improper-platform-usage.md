@@ -29,7 +29,7 @@ In order for this vulnerability to be exploited, the organization must expose a 
 
 The technical impact of this vulnerability corresponds to the technical impact of the associated vulnerability (defined in the OWASP Top Ten) that the adversary is exploiting via the mobile device.
 		 	
-For example, an adversary may exploit a Cross-Site Scripting (XSS) vulnerability via the mobile device. This corresponds to the OWASP Top Ten A3 - XSS Category with a technical impact of moderate.
+For example, an adversary may exploit a Cross-Site Scripting (XSS) vulnerability via the mobile device. This corresponds to the OWASP Top Ten A7 - XSS Category with a technical impact of moderate.
 
 # Business Impacts
 	
