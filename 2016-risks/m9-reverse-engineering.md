@@ -73,7 +73,7 @@ The attacker runs 'strings' against the unencrypted app. As a result of the stri
 
 **Scenario #2**: Cross-Functional Analysis:
 
-The attacker uses IDA Pro against an unencrypted app. As a result of the string table analysis combined with functioanl cross-referencing, the attacker discovers Jailbreak detection code. The attacker uses this knowledge in a subequent code-modification attack to disable jailbreak detection within the mobile app. The attacker then deploys a version of the app that exploits method swizzling to steal customer information.
+The attacker uses IDA Pro against an unencrypted app. As a result of the string table analysis combined with functional cross-referencing, the attacker discovers Jailbreak detection code. The attacker uses this knowledge in a subequent code-modification attack to disable jailbreak detection within the mobile app. The attacker then deploys a version of the app that exploits method swizzling to steal customer information.
 
 **Scenario #3**: Source Code Analysis:
 
