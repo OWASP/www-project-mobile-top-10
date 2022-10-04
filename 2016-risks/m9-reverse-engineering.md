@@ -149,4 +149,6 @@ Then using Dex to Jar converter, an attacker can easily convert it to jar file. 
 
   - [18] InfoSecurity Magazine: [Mobile Malware Infects Millions; LTE Spurs Growth](http://www.infosecurity-magazine.com/view/36686/mobile-malware-infects-millions-lte-spurs-growth/), January 29 2014:
 
+  - [19] SINCON 2021: [Mobile App Hardening Against Reverse Engineering; Vikas Gupta Gautam and Arvind Pandian](https://github.com/su-vikas/Presentations/blob/main/Sincon2021.MobileAppHardeningRE.pdf), [SINCON 2021 Conference Main Stage - Presentation](https://www.youtube.com/watch?v=jan506y19WM&t=21650s) November 05 2021:
+
 > "Number of mobile malware samples is growing at a rapid clip, increasing by 20-fold in 2013... It is trivial for an attacker to hijack a legitimate Android application, inject malware into it and redistribute it for consumption. There are now binder kits available that will allow an attacker to automatically inject malware into an existing application"
