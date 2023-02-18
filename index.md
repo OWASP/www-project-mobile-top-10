@@ -8,6 +8,10 @@ type: documentation
 
 ---
 
+# OWASP Mobile Top 10 2023 project is underway
+Please join us on slack for your Valuable Contribution.
+[Slack Channel](https://join.slack.com/share/enQtNDgxNzk3OTIwMzM5OC1kODk5Yzg0ZDFlYjEyMzQyYjFjZmY0YWRmODhmNTJhOGNkMDE4ZTYyZDgyZWIzODJmNDQyYTRjODUzZmU0MGZj)
+
 # About this list
 
 In 2015, we performed a survey and initiated a Call for Data submission Globally . This helped us to analyze and re-categorize the OWASP Mobile Top Ten for 2016. So the top ten categories are now more focused on Mobile application rather than Server.
