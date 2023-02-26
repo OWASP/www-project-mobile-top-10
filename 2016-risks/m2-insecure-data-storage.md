@@ -56,7 +56,7 @@ This category insecure data storage and unintended data leakage. Data stored ins
 
 - SQL databases;
 - Log files;
-- XML data stores ou manifest files;
+- XML data stores or manifest files;
 - Binary data stores;
 - Cookie stores;
 - SD card;
