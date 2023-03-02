@@ -11,7 +11,9 @@ type: documentation
 # Mobile Top 10 2023: Updates
 
 The new Mobile Top 10 list for 2023 are being worked upon. We would love to see you participate and contribute to the research we are doing.<br>
-<b>[Join the SLACK Channel: Link to  be added by EOD]()</b>
+<b>[Join the SLACK Channel](https://app.slack.com/client/T04T40NHX/C02L2BNTBLP)</b><br>
+
+If you face any issue joining us on Slack, please feel free to reachout to Project Leads.
 
 # About this list
 
