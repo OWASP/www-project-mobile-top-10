@@ -16,7 +16,7 @@ Typically, an attacker will exploit code modification via malicious forms of the
 
 Typically, an attacker will do the following things to exploit this category:
 - Make direct binary changes to the application package's core binary
-- Make direct binary changes to the resources within the applicaiton's package
+- Make direct binary changes to the resources within the application's package
 - Redirect or replace system APIs to intercept and execute foreign code that is malicious
 
 # Security Weakness	
