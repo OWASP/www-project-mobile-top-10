@@ -11,18 +11,23 @@ tags: acknowledgements-tag
 This page is a work in progress. If we have omitted you, or incorrectly affiliated you, please contact us right away.
 
 # Project Leads
+- [Milan Singh Thakur](milan@owasp.org)
+- 
+
+## Past Project Leads
 
 - [Jason Haddix - HP Fortify](jason.haddix@owasp.org)
 - [Daniel Miessler - HP Fortify](daniel.meissler@owasp.org)
 - [Jonathan Carter - Arxan Technologies](jonthan.carter@owasp.org)
-- [Milan Singh Thakur](milan@owasp.org)
 
-# Strategic Roadmap
+
+## Strategic Roadmap
 
 [Strategy Document](https://www.owasp.org/images/f/ff/OWASP_Mobile_Top_Ten_2015_-_Strategy.pdf)
 
 # Wiki Content
 
+- [Milan Singh Thakur](milan@owasp.org)
 - [Chad Butler - Concur Technologies](chad.butler@owasp.org)
 - [Jonathan Carter - Arxan Technologies](jonathan.carter@owasp.org)
 - Ron Gutierrez - Gotham Digital Science
@@ -33,7 +38,7 @@ This page is a work in progress. If we have omitted you, or incorrectly affiliat
 - [Andrew Pannell - Pentest Limited](andrew.pannell@owasp.org)
 - Rahil Parikh - Gotham Digital Science
 - Mike Zuzman
-- [Milan Singh Thakur](milan@owasp.org)
+
 
 # Data Contributors
 
@@ -67,3 +72,4 @@ Key observations and trends from the data can be found in here:
 # Additional Thanks
 
  - Jim Manico
+ - Milan Singh Thakur
