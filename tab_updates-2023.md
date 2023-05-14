@@ -1,7 +1,7 @@
 ---
 layout:  col-sidebar
 title: 2023 Top-10 Updates
-tab: true
+tab: false
 order: 1
 tags: 2023-top-10-updates-tag
 ---
