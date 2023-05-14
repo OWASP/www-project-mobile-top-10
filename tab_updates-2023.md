@@ -1,9 +1,9 @@
 ---
-layout: null
 title: 2023 Top-10 Updates
+layout:  null
 tab: true
 order: 1
-tags: 2023-top-10-updates-tag
+tags: updates-tag
 ---
 
 ![OWASP logo](https://owasp.org/assets/images/logo.png)
