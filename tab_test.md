@@ -1,6 +1,6 @@
 ---
-title: 2023-Top-10-Updates
-layout:  col-sidebar
+layout: col-sidebar
+title: "Top 10 Mobile Risks - Initial Draft List 2023"
 tab: true
 order: 1
 tags: 2023-top-10-tag
