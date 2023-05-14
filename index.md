@@ -24,7 +24,7 @@ Join us on the slack channel for contributions!!
 
 More updates to follow soon...
 
-## Please note: Previous Work is shown below, 2023 Top 10 is Work In Progress
+<b> Please note: Previous Work is shown below, 2023 Top 10 is Work In Progress </b>
 
 
 # Top 10 Mobile Risks - Final List 2016
