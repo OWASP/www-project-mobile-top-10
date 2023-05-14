@@ -1,9 +1,9 @@
 ---
-title: Controls-1
-layout:  null
+title: 2023-Top-10-Updates
+layout:  col-sidebar
 tab: true
 order: 1
-tags: controls-1-tag
+tags: 2023-updates-tag
 ---
 
 ![OWASP logo](https://owasp.org/assets/images/logo.png)
