@@ -3,7 +3,7 @@ title: 2023-Top-10-Updates
 layout:  col-sidebar
 tab: true
 order: 1
-tags: 2023-updates-tag
+tags: 2023-updates-tag-test
 ---
 
 ![OWASP logo](https://owasp.org/assets/images/logo.png)
