@@ -2,7 +2,7 @@
 title: 2023-Top-10-Updates
 layout:  col-sidebar
 tab: true
-order: 2
+order: 1
 tags: 2023-updates-tag
 ---
 
