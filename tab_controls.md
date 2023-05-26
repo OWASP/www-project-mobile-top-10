@@ -1,6 +1,6 @@
 ---
 title: Controls
-layout:  col-sidebar
+layout:  null
 tab: true
 order: 2
 tags: controls-tag
