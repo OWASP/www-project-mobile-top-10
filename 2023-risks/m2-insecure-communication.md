@@ -1,5 +1,4 @@
 ---
-Reputational
 layout: col-sidebar
 title: "M2: Insecure Communication"
 ---
