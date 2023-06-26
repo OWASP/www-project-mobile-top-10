@@ -16,6 +16,8 @@ This information is valuable to attackers for various reasons. For example, an a
 - blackmail the victim with sensitive information or
 - harm the victim by destroying or manipulating the victim's critical data.
 
+In general, PII could either be leaked (i.e., a violation of confidentiality), manipulated (violation of integrity) or destroyed/blocked (violation of availability).
+
 
 # Attack Vectors	
 
@@ -44,53 +46,74 @@ Hence, an app is vulnerable to privacy infringements if some personal data it co
 
 Privacy violations usually have little technical impact on the system as a whole. Only if the PII includes information like authentication data, it can affect certain global security properties, e.g., traceability. 
 
-If user data is manipulated it might render the system unusable for that user. Through ill-formed data, also the backend might be disturbed if it is missing proper sanitization and exception handling.
+If user data is manipulated it might render the system unusable for that user. Through ill-formed data, also the backend may be disturbed if it is missing proper sanitization and exception handling.
 
 
 # Business Impacts
 
 **Impact SEVERE** 
 
-The business impact of privacy violations will typically result in the following at a minimum:
+The extend and severity of the business impact, which a privacy violation has, strongly depends on the number of affected users, the criticality of the affected data, and the data protection regulations that apply where the violation happened. The business impact of privacy violations will typically result in the following at a minimum:
 
 - Violation of legal regulations
 - Financial damage due to victims' lawsuits
 - Reputational damage
 - Loss or theft of PII
 
-Regulations are the biggest issue regarding privacy controls.  GDPR (Europe), CCPA (California, US), PDPA (Singapore), PIPEDA (Canada), LGPD (Brazil), Data Protection Act 2018 (UK), POPIA (South Africa), PDPL (China) are examples of relevant regulations with known sanctions against companies for not protecting their users' data.
+Regulations are the biggest issue regarding privacy controls.  GDPR (Europe), CCPA (California, US), PDPA (Singapore), PIPEDA (Canada), LGPD (Brazil), Data Protection Act 2018 (UK), POPIA (South Africa), PDPL (China) are examples of relevant regulations with known sanctions against companies for not protecting their users' data. 
 
 
 # Am I Vulnerable To 'Inadequate Privacy Controls'?
 
-Are you using PII?
-Do you store and transfer them securely (cf. M2, M9)?
-Are protected backups enabled?
-Do they leak to externally accessible sinks, like clipboard, url-parameters, intents/broadcasts, logs/error messages?
+An app can only be vulnerable to Inadequate Privacy Controls if it processes some form of personally identifiable information. This is almost always the case: Client apps' IP addresses visible to a server, logs of the apps' usage, and metadata sent with crash reports or analytics are PII that apply to most apps. Usually, an app will collect and process additional, more sensitive PII from its users, like accounts, payment data, locations and more.
+
+Given an app that uses PII, it might expose it like any other sensitive data. This most notably happens through 
+
+- insecure data storage and communication (cf. TODO),
+- data access with insecure authentification and authorization (cf. TODO), and
+- insider attacks on the app's sandbox (cf. TODO).
+
+The other OWASP Mobile Top 10 risks provide deeper insights on how an app might be vulnerable to the different attack vectors.
 
 
 # How Do I Prevent 'Inadequate Privacy Controls'?
 
-The safest approach to prevent privacy violations is to minimize the amount and variety of PII that is processed.
+Something that does not exist cannot be attacked, so the safest approach to prevent privacy violations is to minimize the amount and variety of PII that is processed. This requires full awareness of all PII assets in a given app. With that awareness, the following questions should be assessed:
 
-PII should not be stored or transferred unless absolutely necessary. If it is to store or transfer, one should consider encrypting, anonymizing, or reducing it if feasible. Leakage of PII to uncontrollable sinks, e.g., logs, clipboard, URL-parameters, must be prevented.
+- Is all PII processed really necessary, e.g., name and address, gender, age?
+- Can some of the PII be replaced by less critical information, e.g., fine-grained location by coarse-grained location?
+- Can some of the PII be reduced, e.g., location updates every hour instead of every minute?
+- Can some of the PII be anonymized or blurred, e.g., by hashing, bucketing or adding noise?
+- Can some of the PII be deleted after some expiration period, e.g., only keep health data of the last week?
+- Can users consent to optional PII usage, e.g., to receive a better service but also be aware of the additional risk?
 
-Be aware of the most valuable PII assets you are processing in your app. Use threat modeling to assess the most likely ways that privacy violations may occur. Use static analyses to reveal common pitfalls, like logging of PII or leakage to URL query parameters. Consider platform or 3rd party tools to sanitize logs and error messages. -> Not sure how relevant. 3rd party SDK and analytics data leakage are not covered. I would also argue that Static Analysis is not efficient enough to detect leaks of PII.
+The remaining PII should not be stored or transferred unless absolutely necessary. If it has to be stored or transferred, access must be protected with proper authentication and possibly authorization. Also defense in depth should be considered for particularly critical data. For example health data may be encrypted with a key sealed in the device's TPM in addition to its storage in the app's sandbox. So if an attacker manages to circumvent the sandbox restrictions, the data is still not readable. The other OWASP Mobile Top 10 risks suggest measures to securely store, transfer, access and otherwise handle sensitive data.
 
-data deletion mechanisms
-user awareness and control
-granular privacy settings
+Threat modeling can be used to determine the the most likely ways that privacy violations may occur in a given app. The effort of securing PII could then be focused on these. 
+
+Static and dynamic security checking tools might reveal common pitfalls, like logging of sensitive data or leakage to clipboard or URL query parameters.
 
 
 # Example Attack Scenarios
 
 The following scenarios showcase inadequate privacy controls in mobile apps:
 
-**Scenario #1:** inadequate sanitization of logs and error messages
+**Scenario #1:** Inadequate sanitization of logs and error messages.
 
-**Scenario #2:** using PII in URL query parameters
+Reporting of logs and exceptions is essential for quality assurance of a productive app. Crash reports and other usage data helps developers to fix bugs and learn about how their app is used. However, logs and error messages might contain PII if the developers chose to include this data in log or error messages. Also, 3rd party libraries might include PII in their error messages and logs as well. An example of a frequent issue are database exceptions that reveal part of the query or result. This will most likely be visible to any platform provider used for collecting and evaluating crash reports. It might also become visible to the user if the error is displayed on screen or to attackers who can read device logs. Developers should be especially careful in what they log and ensure that exception messages are sanitized before displaying them to the user or reporting them to a server.
 
-**Scenario #3:** Exclusion of personal data in backups/not setting hasFragileUserData
+**Scenario #2:** Using PII in URL query parameters.
+
+URL query parameters are often used to transmit request arguments to a server. However, URL query parameters are visible at least in the server logs, but often also in website analytics and possibly in the local browser history. So sensitive information should never be transmitted as query parameters. Instead, they should be sent as a header or part of the body.
+
+**Scenario #3:** Exclusion of personal data in backups/not setting hasFragileUserData.
+
+Most PII processed by an app is stored in its sandbox. The app should explicitly configure what data to include in device backups. An attacker might obtain a device and create a backup or get a backup from another source, from which the sandbox content could be extraced.
+
+Alternatively, by setting hasFragileUserData to 'true' in Android, an app may preserve its data upon uninstallation. An attacker who manages to install a malicious app with the same package id later can access this data.
+
+Hence, both settings should be explicitly set for apps to make the developers' intent transparent and to control the information flow through backups or between subsequent installations of an app.
+
 
 # References
 
