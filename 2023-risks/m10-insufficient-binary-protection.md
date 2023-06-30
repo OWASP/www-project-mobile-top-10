@@ -93,6 +93,11 @@ As always, apps run in untrusted execution environments and should only get the 
 # References
 
 - OWASP
-TODO
+  - [Tampering and Reverse Engineering (MASTG)](https://mas.owasp.org/MASTG/General/0x04c-Tampering-and-Reverse-Engineering/)
+  - [Tampering and Reverse Engineering iOS (MASTG)](https://mas.owasp.org/MASTG/iOS/0x06c-Reverse-Engineering-and-Tampering/)
+  - [Tampering and Reverse Engineering Android (MASTG)](https://mas.owasp.org/MASTG/Android/0x05c-Reverse-Engineering-and-Tampering/)
+  - [OWASP Reverse Engineering and Code Modification Prevention Project](https://wiki.owasp.org/index.php/OWASP_Reverse_Engineering_and_Code_Modification_Prevention_Project)
+
 - External
-TODO
+  - [External References](http://cwe.mitre.org/)
+  - 
