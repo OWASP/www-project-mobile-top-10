@@ -85,9 +85,9 @@ As always, apps run in untrusted execution environments and should only get the 
 
 # Example Attack Scenarios
 
-**Scenario #1** Hardcoded sensitive information: TODO
+**Scenario #1** Hardcoded sensitive information: Assume an app uses a commercial API where it has to pay a small fee for each call. These calls would be easily paid for by the subscription fee the users pay for that app. However, the API key used for access and billing is hardcoded in the app's unprotected binary code. An attacker who wants access could reverse engineer the app with free tools and get access to the secret string. Since API access ist only protected with the API key and no additional user authentication, the attacker can freely work on the API or even sell the API key. In the worst case, the API keys could be misused a lot, causing substantial financial damage to the provider of the app, or at least blocking legitimate users of the app if the API access is rate-limited.
 
-**Scenario #2** Critical information embedded in code: TODO
+**Scenario #2** Critical information embedded in code: A mobile game might publish its app and the first levels for free. If the users like the game, they pay for full access. All the resources for the later levels are shipped with the app. They are only protected by a license check, where the license is downloaded when the user pays. An attacker could reverse engineer the app and try to understand how the verification of the payment is happening. If the app binary is not sufficiently protected, it is easy to locate the license check and to just replace it with a static success statement. The attacker can then recomiple the app and play it for free or even sell it under another name in the app stores.
 
 
 # References
