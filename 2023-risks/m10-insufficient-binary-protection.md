@@ -100,4 +100,3 @@ As always, apps run in untrusted execution environments and should only get the 
 
 - External
   - [External References](http://cwe.mitre.org/)
-  - 
