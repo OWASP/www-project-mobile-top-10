@@ -45,9 +45,9 @@ Note that there are no fully reliable mechanisms to prevent binary attacks. Defe
 
 **Impact Moderate**
 
-If secrets leak, they must be replaced quickly throughout the system, which is hard if the secrets are hardcoded in the app. Information leakage from the binary also has potential to reveal security vulnerabilities in the backend. Yet, manipulation has more impact on the technical soundness of a system. 
+If secrets leak, they must be replaced quickly throughout the system, which is hard if the secrets are hardcoded in the app. Information leakage from the binary also has the potential to reveal security vulnerabilities in the backend. Yet, manipulation has more impact on the technical soundness of a system. 
 
-By manipulation of the binaries, attackers could change how apps work arbitratily, for example to their own benefit or to disturb the backends, if they are insufficiently hardened against malicious requests.
+By manipulation of the binaries, attackers could change how apps work arbitrarily, for example to their own benefit or to disturb the backends, if they are insufficiently hardened against malicious requests.
 
 
 # Business Impacts
