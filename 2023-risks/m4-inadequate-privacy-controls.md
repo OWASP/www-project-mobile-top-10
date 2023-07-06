@@ -122,4 +122,5 @@ Hence, both settings should be explicitly set for apps to make the developers' i
   - [Testing User Privacy Protection (MASTG)](https://mas.owasp.org/MASTG/General/0x04i-Testing-User-Privacy-Protection/)
   - [OWASP Top 10 Privacy Risks](https://owasp.org/www-project-top-10-privacy-risks/)
 - External
+  - [EU General Data Protection Regulation](https://gdpr.eu/)
   - [External References](http://cwe.mitre.org/)
