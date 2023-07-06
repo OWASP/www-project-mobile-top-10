@@ -19,7 +19,7 @@ Besides collecting information, attackers could also manipulate app binaries to 
 
 **Exploitability EASY**
 
-App binaries usually can just be downloaded from the app stores or be copied from mobile devices, so binary attacks are easy to set up. 
+App binaries usually can just be downloaded from the app stores or copied from mobile devices, so binary attacks are easy to set up. 
 
 An app binary could be subject to two types of attacks:
 
