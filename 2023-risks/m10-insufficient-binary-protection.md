@@ -54,7 +54,7 @@ By manipulation of the binaries, attackers could change how apps work arbitratil
 	
 **Application / Business Specific** 
 
-Leakage of API-keys for commercial APIs or similar can cause significant costs if they are misused on a large scale. Even more, if intellectual property, like algorithms or KI models that have been developed with great effort, become public, the business model of the app developers may be threatened.
+Leakage of API keys for commercial APIs or similar can cause significant costs if they are misused on a large scale. Even more, if intellectual property, like algorithms or AI models that have been developed with great effort, becomes public, the business model of the app developers may be threatened.
 
 The same holds for apps that are tampered to remove license checks or to publish their functionality with a competing app.
 
