@@ -12,7 +12,7 @@ Attackers who target app binaries are motivated by various reasons.
 
 The binary could contain valuable secrets, like commercial API keys or hardcoded cryptographic secrets that an attacker could misuse. Also, the code in the binary could be valuable on its own, e.g., because it contains critical business logic or pre-trained AI models. Some attackers might also not target the app itself but use it to explore potential weaknesses of the corresponding backend to prepare an attack.
 
-Besides collecting information, attackers could also manipulate app binaries to access premium functions for free or to bypass other security checks. In the worst case, popular apps could be modified to contain malicious code and be distributed via third-party app stores or under a new name to exploit unsuspecting users.
+Besides collecting information, attackers could also manipulate app binaries to access premium functions for free or to bypass other security checks. In the worst case, popular apps could be modified to contain malicious code and be distributed via third-party app stores or under a new name to exploit unsuspecting users. One common attack example would be repackaging apps with payment identifiers replaced and distribute these via app stores. Then, the attacker receives the payments of users of these unauthorized copies of the app.
 
 
 # Attack Vectors	
@@ -32,9 +32,9 @@ An app binary could be subject to two types of attacks:
 **Prevalence COMMON** <br />
 **Detectability EASY**
 
-All apps can be subject to binary attacks, and many actually will be in some form at some time. Particularly vulnerable to binary attacks are those apps, that *have* sensitive data or algorithms hardcoded in their binary. They are more likely to be attacked and should employ countermeasures to fend off an attacker long enough that the attacker gives up because breaking the protection would be more expensive than the gain from success.
+All apps can be subject to binary attacks, and many actually will be in some form at some time. Particularly vulnerable to binary attacks are those apps, that *have* sensitive data or algorithms hardcoded in their binary. They are more likely to be attacked and should employ countermeasures to fend off an attacker long enough that the attacker gives up because breaking the protection would be more expensive than the gain from success. Oftentimes, e.g., in case of copy protection, it is sufficient to prolongate the cracking process until the targeted revenue has been reached.
 
-In general, fully compiled apps like iOS apps are less susceptible to reverse engineering and code tampering than higher-level bytecode as in Android apps. 
+In general, fully compiled apps like iOS apps are less susceptible to reverse engineering and code tampering than higher-level bytecode as in Android apps (note that this might not hold for apps developed with cross-platform technologies, like PWA or Flutter).
 
 Especially popular apps are likely to be manipulated and redistributed through app stores. Detecting and removing these apps is offered by specialized companies but is also possible with certain detection and reporting mechanisms within the apps.
 
@@ -67,7 +67,7 @@ All apps are vulnerable to binary attacks. Binary attacks can become particularl
 
 Whether the app is sufficiently secure after all depends on the business impact that different binary attacks could have. The more motivating it is for attackers and the greater the impact would be, the more effort should be put into protection. Hence, "vulnerability" to binary attacks is highly specific to the given app.
 
-For a quick check, developers could inspect their own app binaries using similar tools as attackers would use. There are many free or affordable tools, like IDA Pro, Hopper, otool, apktool and Ghidra that are also quite easy to use and well documented.
+For a quick check, developers could inspect their own app binaries using similar tools as attackers would use. There are many free or affordable tools, like otool, apktool and Ghidra that are also quite easy to use and well documented.
 
 
 # How Do I Prevent 'Insufficient Binary Protection'?
@@ -85,9 +85,11 @@ As always, apps run in untrusted execution environments and should only get the 
 
 # Example Attack Scenarios
 
-**Scenario #1** Hardcoded sensitive information: Assume an app uses a commercial API where it has to pay a small fee for each call. These calls would be easily paid for by the subscription fee the users pay for that app. However, the API key used for access and billing is hardcoded in the app's unprotected binary code. An attacker who wants access could reverse engineer the app with free tools and get access to the secret string. Since API access ist only protected with the API key and no additional user authentication, the attacker can freely work on the API or even sell the API key. In the worst case, the API keys could be misused a lot, causing substantial financial damage to the provider of the app, or at least blocking legitimate users of the app if the API access is rate-limited.
+**Scenario #1** Hardcoded API keys: Assume an app uses a commercial API where it has to pay a small fee for each call. These calls would be easily paid for by the subscription fee the users pay for that app. However, the API key used for access and billing is hardcoded in the app's unprotected binary code. An attacker who wants access could reverse engineer the app with free tools and get access to the secret string. Since API access ist only protected with the API key and no additional user authentication, the attacker can freely work on the API or even sell the API key. In the worst case, the API keys could be misused a lot, causing substantial financial damage to the provider of the app, or at least blocking legitimate users of the app if the API access is rate-limited.
 
-**Scenario #2** Critical information embedded in code: A mobile game might publish its app and the first levels for free. If the users like the game, they pay for full access. All the resources for the later levels are shipped with the app. They are only protected by a license check, where the license is downloaded when the user pays. An attacker could reverse engineer the app and try to understand how the verification of the payment is happening. If the app binary is not sufficiently protected, it is easy to locate the license check and just replace it with a static success statement. The attacker can then recompile the app and play it for free or even sell it under another name in the app stores.
+**Scenario #2** Disabling payment and licence checks: A mobile game might publish its app and the first levels for free. If the users like the game, they pay for full access. All the resources for the later levels are shipped with the app. They are only protected by a license check, where the license is downloaded when the user pays. An attacker could reverse engineer the app and try to understand how the verification of the payment is happening. If the app binary is not sufficiently protected, it is easy to locate the license check and just replace it with a static success statement. The attacker can then recompile the app and play it for free or even sell it under another name in the app stores.
+
+**Scenario #3** Hardcoded AI models: Assume a medical app that features an AI to answer user requests given as speech or free text inputs needs. This app includes its specialized and quality assured AI model in its source code to enable offline access and avoid hosting own download servers. This AI model is the most valuable asset of this app and took many person-years in development. An attacker might try to extract this model from the source code and sell it to competitors. If the app binary is insufficiently protected, the attacker could not only access the AI model, but also learn how it is used, selling this information along with the AI training parameters.
 
 
 # References
