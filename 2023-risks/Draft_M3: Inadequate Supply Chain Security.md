@@ -25,7 +25,7 @@ Another way, a threat agent can exploit vulnerability in third party libraries o
 # Security Weakness
 
 **Prevalence COMMON** </br>
-**Detactibility EASY**
+**Detactibility HARD**
 
 Inadequate Supply Chain vulnerability occurs due to lack of secure coding practices, insufficient code reviews,testing leading to the inclusion of vulnerabilities in the app. 
 
@@ -92,6 +92,7 @@ Users download and install the infected app, which steals their login credential
 # References
 - OWASP
   - [Supply Chain Vulnerabilities](https://owasp.org/www-project-kubernetes-top-ten/2022/en/src/K02-supply-chain-vulnerabilities)
+  - [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/)
 
 - External
   - [External References](http://cwe.mitre.org/)
