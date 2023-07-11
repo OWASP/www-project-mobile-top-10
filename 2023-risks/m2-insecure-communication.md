@@ -19,8 +19,8 @@ Most modern mobile applications exchange data with one or more remote servers. W
 
 While modern applications do reply on cryptographic protocols such as SSL/TLS, they can sometimes have flaws in their implementations like: 
 
-- No hostname validation;
-- Accepting bad ssl certificates (self-signed, revoked, expired..); or
+- Using deprecated protocols and/or bad configuration settings;
+- Accepting bad ssl certificates (self-signed, revoked, expired, wrong host...); or
 - Inconsistency (having SSL/TLS only on select workflows such as authentication).
 
 
@@ -30,7 +30,7 @@ While modern applications do reply on cryptographic protocols such as SSL/TLS, t
 
 **Detectability AVERAGE**
 
-while modern mobile applications protect network traffic, they often leave some requests unprotected. This inconsistency leads to the risk of exposing data and session IDs to interception. The use of transport security does not mean the app has implemented it correctly. To detect basic flaws, observe the phone's network traffic. More subtle flaws require inspecting the design of the application and the applications configuration.  
+While modern mobile applications aim to protect network traffic, they often have inconsistencies in their implementation. These inconsistencies can lead to vulnerabilities that expose data and session IDs to interception. Just because an app uses transport security protocols doesn't mean it's implemented correctly. To identify basic flaws, you can observe the network traffic on the phone. However, detecting more subtle flaws requires a closer look at the application's design and configuration.
 
 # Technical Impacts	
 
@@ -79,6 +79,7 @@ The usual risks of insecure communication are around data integrity, data confid
 - Do not send sensitive data over alternate channels (e.g, SMS, MMS, or notifications).
 - If possible, apply a separate layer of encryption to any sensitive data before it is given to the SSL channel. In the event that future vulnerabilities are discovered in the SSL implementation, the encrypted data will provide a secondary defense against confidentiality violation.
 - During development cycles, avoid overriding SSL verification methods to allow untrusted certificates, instead try using self-signed certificates or a local development certificate authority (CA)
+- During security assessments, it is advised to analyze application traffic to see if any traffic goes through plaintext channels  
 
 **iOS Specific Best Practices**
 
