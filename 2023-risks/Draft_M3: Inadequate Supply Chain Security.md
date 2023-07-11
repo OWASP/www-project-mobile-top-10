@@ -25,11 +25,11 @@ Another way, a threat agent can exploit vulnerability in third party libraries o
 # Security Weakness
 
 **Prevalence COMMON** </br>
-**Detactibility HARD**
+**Detectability HARD**
 
 Inadequate Supply Chain vulnerability occurs due to lack of secure coding practices, insufficient code reviews,testing leading to the inclusion of vulnerabilities in the app. 
 
-Other ways like- Insufficient or insecure app signing and distribution process, weakness in third party software components or libraries, insufficient security controls for data,encryption,storage, or exposing sensitive data to unauthorized access.
+Other causes for inadequate supply chain vulnerabilities include insufficient or insecure app signing and distribution process, weakness in third party software components or libraries, insufficient security controls for data, encryption, storage, or exposing sensitive data to unauthorized access.
 
 # Technical Impacts
 **Impact SEVERE**
