@@ -8,9 +8,9 @@ title: "M6: Insufficient Input/Output Validation"
 
 **Application Specific**
 
-If the application fails to properly validate and sanitize data received from external sources like user inputs or network data. This oversight can lead to various security vulnerabilities, such as SQL injection, Command Injection or cross-site scripting (XSS) attacks. 
+Insufficient validation and sanitization of data from external sources, such as user inputs or network data, in a mobile application can introduce severe security vulnerabilities. Mobile apps that fail to properly validate and sanitize such data are at risk of being exploited through attacks specific to mobile environments, including SQL injection, Command Injection, and cross-site scripting (XSS) attacks.
 
-These attacks can lead to unauthorized data access, manipulation, and potentially compromise the entire system. 
+These vulnerabilities can have detrimental consequences, including unauthorized access to sensitive data, manipulation of app functionality, and potential compromise of the entire mobile system.
 
 Inadequate output validation can result in data corruption or presentation vulnerabilities, allowing malicious actors to inject malicious code or manipulate sensitive information displayed to users.
 
@@ -102,17 +102,19 @@ To prevent "Insufficient Input/Output Validation" vulnerabilities:
  
 # Example Attack Scenarios
 
-**Scenario #1** SQL Injection
+**Scenario #1** Remote Code Execution via Malicious Input
 
-An attacker can craft malicious input by appending SQL statements to user-provided data. For example, in a login form, an attacker could enter a specially crafted username like "' OR 1=1;--" which, if the application lacks proper input validation, can alter the intended SQL query. This can lead to the execution of unauthorized database operations, bypassing authentication, and potentially accessing sensitive information or gaining administrative privileges.
+An attacker identifies a mobile application lacking proper input validation and sanitization. By crafting a malicious input containing unexpected characters, they exploit the application's behavior. Due to insufficient validation, the application mishandles the input, leading to vulnerabilities. The attacker successfully executes arbitrary code, gaining unauthorized access to the device's resources and sensitive data.
 
-**Scenario #2** Cross Site Scripting
+**Scenario #2** Injection Attacks via Insufficient Output Validation
 
-An attacker inject malicious scripts into input fields such as comment sections or form inputs. When the application fails to adequately validate or sanitize this output data, the injected scripts are executed by unsuspecting users' browsers. This enables the attacker to steal session cookies, perform actions on behalf of the victim, or deface the website.
+An attacker identifies a mobile application with inadequate output validation and sanitization. They exploit an entry point where user-generated content or untrusted data is processed. By crafting malicious input containing code or scripts (e.g., HTML, JavaScript, SQL), the attacker takes advantage of the lack of output validation. Submitting the crafted input through user interaction, the application fails to validate or sanitize it, allowing the execution of injected code or unintended operations. The attacker successfully executes injection-based attacks like cross-site scripting (XSS) or SQL injection, compromising the application's integrity and gaining access to sensitive information.
 
-**Scenario #3** Command Injection
+**Scenario #3** Remote Code Execution via Malformed Output
 
-An Attacker can exploit insufficient input validation by injecting malicious system commands into input fields. For example, an attacker might append a command like "; rm -rf /" to a user-provided filename, which, if the application does not properly validate the input, could result in the execution of the malicious command. This can lead to unauthorized access, data loss, or complete compromise of the underlying system.
+An attacker identifies a mobile application that processes user-provided data and generates dynamic output.The attacker crafts specially formatted data that exploits the application's insufficient output validation. The attacker submits the malformed data to the application, either through direct interaction or by exploiting an exposed API.
+The application fails to properly validate or sanitize the generated output, allowing the attacker's crafted data to execute code or trigger unintended actions.
+By exploiting this vulnerability, the attacker achieves remote code execution, gaining control over the mobile device, its resources, or sensitive data.
 
 # References
 
