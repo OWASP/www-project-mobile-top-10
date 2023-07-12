@@ -18,7 +18,7 @@ Inadequate output validation can result in data corruption or presentation vulne
 
 **Exploitability HIGH**
 
-Insufficient input/output validation exposes our application to critical attack vectors, including SQL injection, XSS, command injection, path traversal, HTML injection, and remote file inclusion. These vulnerabilities can lead to unauthorized access, data manipulation, code execution, and compromise of the entire system. 
+Insufficient input/output validation exposes our application to critical attack vectors, including SQL injection, XSS, command injection and path traversal. These vulnerabilities can lead to unauthorized access, data manipulation, code execution, and compromise of the entire backend system. 
 
 # Security Weakness	
 
@@ -43,15 +43,15 @@ These vulnerabilities often arise from errors in application logic, incomplete i
 
 Insufficient input/output validation vulnerability can have several technical impacts on the affected application:
 
-**Code Execution:** A malicious actor can exploit this vulnerability to execute unauthorized code within the application's enviornment, bypassing the security measures.
+**Code Execution:** A malicious actor can exploit this vulnerability to execute unauthorized code within the application's environment, bypassing the security measures.
 
-**Data Breaches:** Insufficient validation can enables attackers to manipulate input, potentially leading to unauthorized access and extraction of sensitive data.
+**Data Breaches:** Insufficient validation can enable attackers to manipulate input, potentially leading to unauthorized access and extraction of sensitive data.
 
 **System Compromise:** Attackers can gain unauthorized access to the underlying system, compromising it and potentially taking control.
 
 **Application Disruption:** Malicious input can cause disruptions, crashes or data corruption, impacting the application's reliability and functionality.
 
-**Reputation Damage:** Successful exploitation of this vulnerability can result in reputational harm due to data breaches and loss of customer's trust.
+**Reputation Damage:** Successful exploitation of this vulnerability can result in reputational harm due to data breaches and loss of customer trust.
 
 **Legal and Compliance Issues:** Inadequate validation may lead to legal liabilities, regulatory penalties and non compliance with data protection regulations.
 
@@ -60,7 +60,7 @@ Insufficient input/output validation vulnerability can have several technical im
 	
 **Application/Business Specific** 
 
-Insufficient input/output validation vulnerability has significant technical and business implications. From a application standpoint, the impacts include:
+Insufficient input/output validation vulnerability has significant technical and business implications. From an application standpoint, the impacts include:
 
 - Code Execution: Attackers can exploit this vulnerability to execute unauthorized code, potentially leading to system compromise and unauthorized access.
 - Data Breaches: Insufficient validation allows attackers to manipulate input, resulting in data breaches and unauthorized access to sensitive information.
