@@ -18,18 +18,18 @@ This can lead to unauthorized data access or manipulation, denial of service, or
 
 **Exploitability MEDIUM**
 
-There are multiple ways to exploit Inadequate Supply Chain vulnerability for example- an insider threat agent or an attacker can inject a malicious code during the development phase of the app, then they can compromise the app signing keys or certificates to sign malicious code as trusted. 
+There are multiple ways to exploit Inadequate Supply Chain vulnerability for example- an insider threat agent or an attacker can inject malicious code during the development phase of the app, then they can compromise the app signing keys or certificates to sign malicious code as trusted. 
 
-Another way, a threat agent can exploit vulnerability in third party libraries or components used in the app.
+Another way, a threat agent can exploit vulnerabilities in third-party libraries or components used in the app.
 
 # Security Weakness
 
 **Prevalence COMMON** </br>
 **Detectability HARD**
 
-Inadequate Supply Chain vulnerability occurs due to lack of secure coding practices, insufficient code reviews,testing leading to the inclusion of vulnerabilities in the app. 
+Inadequate Supply Chain vulnerability occurs due to a lack of secure coding practices, insufficient code reviews and testing leading to the inclusion of vulnerabilities in the app. 
 
-Other causes for inadequate supply chain vulnerabilities include insufficient or insecure app signing and distribution process, weakness in third party software components or libraries, insufficient security controls for data, encryption, storage, or exposing sensitive data to unauthorized access.
+Other causes for inadequate supply chain vulnerabilities include insufficient or insecure app signing and distribution process, weakness in third-party software components or libraries, insufficient security controls for data, encryption, storage, or exposing sensitive data to unauthorized access.
 
 # Technical Impacts
 **Impact SEVERE**
