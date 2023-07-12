@@ -69,7 +69,7 @@ Similarly, mobile apps can exhibit various signs of insecure authentication:
 * __Anonymous Backend API Execution__ - The ability of the app to execute a backend API service request without providing an access token may point to insecure authentication.
 * __Local Storage of Passwords or Shared Secrets__ - If the app stores any passwords or shared secrets locally on the device, this could be a sign of insecure authentication.
 * __Weak Password Policy__ - The use of a simplified password-entering process may imply insecure authentication.
-* __ Usage of Features like FaceID and TouchID__ - Employing features like FaceID or TouchID could be indicative of insecure authentication.
+* __Usage of Features like FaceID and TouchID__ - Employing features like FaceID or TouchID could be indicative of insecure authentication.
 
 # How Do I Prevent 'Insecure Authentication and Authorization'?
 
@@ -93,6 +93,7 @@ __Reinforce Authentication__
 
 * Developers should assume that all client-side authorization and authentication controls can be bypassed by malicious users. Server-side reinforcement of these controls is critical.
 * Due to offline usage requirements, mobile apps might need to perform local authentication or authorization checks. In such cases, developers should instrument local integrity checks to detect any unauthorized code changes. Consult additional guidance on detecting and reacting to binary attacks.
+* Use FaceID and TouchID to unlock biometrically locked secrets and securely protect sensitive authentication materials, like session tokens.
 
 __Insecure Authorization Prevention__
 
