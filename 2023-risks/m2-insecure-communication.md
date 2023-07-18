@@ -7,7 +7,7 @@ title: "M2: Insecure Communication"
 
 **Application Specific**
 
-Most modern mobile applications exchange data with one or more remote servers. When the data transmission takes place, it typically goes through the mobile device's carrier network and the internet, a threat agent listening on the wire can intercept and modify the data if it transmitted in plaintext or using a deprecated encryption protocol. The following threat agents exist:
+Most modern mobile applications exchange data with one or more remote servers. When the data transmission takes place, it typically goes through the mobile device's carrier network and the internet, a threat agent listening on the wire can intercept and modify the data if it transmitted in plaintext or using a deprecated encryption protocol. Threat agents might have different motives such as stealing sensitive information, conducting espionage, identity theft and more. The following threat agents exist:
 
 - An adversary that shares your local network (compromised or monitored Wi-Fi);
 - Rogue carrier or network devices (routers, cell towers, proxy's, etc); or
