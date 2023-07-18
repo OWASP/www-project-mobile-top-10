@@ -31,7 +31,7 @@ An app binary could be subject to two types of attacks:
 **Prevalence COMMON** <br />
 **Detectability EASY**
 
-All apps are vulnerable to binary attacks and many will end up the subject of some form of an attack at some time. Those apps that have sensitive data or algorithms hardcoded into their binary are particularly vulnerable to binary attacks.  These apps should employ countermeasures to fend off potential attackers long enough so that an attacker will give up because the cost of successfully breaking the protection would be more expensive than the gain from that success. Oftentimes, e.g., in case of copy protection, it is sufficient to prolongate the cracking process until the targeted revenue from app sales has been reached. 
+All apps are vulnerable to binary attacks and many will end up the subject of some form of an attack at some time. Those apps that *have* sensitive data or algorithms hardcoded into their binary are particularly vulnerable to binary attacks. These apps should employ countermeasures to fend off potential attackers long enough so that an attacker will give up because the cost of successfully breaking the protection would be more expensive than the gain from that success. Oftentimes, e.g., in case of copy protection, it is sufficient to prolongate the cracking process until the targeted revenue from app sales has been reached. 
 
 In general, fully compiled apps like iOS apps are less susceptible to reverse engineering and code tampering than higher-level bytecode found in Android apps (note that this might not hold for apps developed with cross-platform technologies, like PWA or Flutter). 
 
