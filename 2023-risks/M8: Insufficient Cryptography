@@ -8,20 +8,20 @@ title: "M8: Insufficient Cryptography"
 
 **Application Specific**
 
-Individuals who possess physical proximity to data that has been inadequately encrypted or mobile malware that operates on behalf of an adversary can compromise the security of the system.
+Threat agents who exploit insecure cryptography in mobile applications can undermine the confidentiality, integrity, and authenticity of sensitive information. These threat agents include skilled hackers who target cryptographic algorithms or implementations to decrypt sensitive data, malicious insiders who manipulate cryptographic processes or leak encryption keys, state-sponsored actors engaged in cryptanalysis for intelligence purposes, cybercriminals who exploit weak encryption to steal valuable data or conduct financial fraud, and third-party adversaries who leverage vulnerabilities in cryptographic protocols or libraries.
 
 # Attack vectors
 
 **Exploitability Average**
 
-Any API call that is accessible to potential attackers can be exploited as an attack vector. An attack vector refers to a specific method or pathway through which an attacker can gain unauthorized access, manipulate data, or compromise the security of the mobile application.
+The attack vector for insecure cryptography in a mobile application involves exploiting vulnerabilities in the cryptographic mechanisms used to protect sensitive information. Attackers may employ various techniques, such as cryptographic attacks, brute force attacks, or side-channel attacks, to exploit weaknesses in encryption algorithms, key management, or implementation flaws. By targeting insecure cryptography, attackers aim to decrypt encrypted data, manipulate cryptographic processes, or gain unauthorized access to sensitive information. This can lead to data breaches, unauthorized access to user accounts, compromised confidentiality, or the ability to forge or tamper with data. 
 
 # Security weakness
 
 **Prevalence COMMON** <br /> 
 **Detectability Average**
 
-To exploit this vulnerability, an adversary must effectively decrypt encrypted code or sensitive data, exposing it in an unencrypted form. This vulnerability arises from weak encryption algorithms or flaws present within the encryption process itself.
+Insecure cryptography in a mobile application introduces security weaknesses that can undermine the effectiveness of cryptographic measures and compromise the confidentiality and integrity of sensitive data. These weaknesses may include using weak encryption algorithms or inadequate key lengths, poor key management practices, improper handling of encryption keys, insecure random number generation, flawed implementation of cryptographic protocols, or vulnerabilities in cryptographic libraries or frameworks. Attackers can exploit these weaknesses to bypass encryption, perform cryptographic attacks, manipulate data, or gain unauthorized access to encrypted information. 
 
 # Technical Impact 
 
@@ -55,7 +55,7 @@ There are several ways in which insecure cryptography can manifest in a mobile a
 
 **Flawed Encryption Implementation**: The encryption/decryption process itself may be implemented incorrectly or contain programming flaws. These implementation errors can introduce vulnerabilities that attackers can exploit to bypass or weaken the encryption protections.
 
-**Insecure Storage of Encryption Keys**: If the encryption keys are stored insecurely on the mobile device, such as in plain text or in easily accessible locations, attackers with physical or unauthorized access to the device can retrieve the keys and decrypt the protected data.
+**Insecure Storage of Encryption Data/Keys**: If the encryption keys are stored insecurely on the mobile device, such as in plain text or in easily accessible locations, attackers with physical or unauthorized access to the device can retrieve the keys and decrypt the protected data. The mobile application utilizes a weak encryption algorithm or uses encryption incorrectly, such as using a weak key or failing to properly encrypt all sensitive data. This can result in compromised data if the encryption is easily bypassed or decrypted by an attacker.
 
 **Lack of Secure Transport Layer**: When transmitting encrypted data over networks, it is crucial to use secure transport layer protocols like HTTPS. If the mobile app fails to implement secure transport protocols, encrypted data may be vulnerable to interception or tampering during transmission.
 
