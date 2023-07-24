@@ -1,6 +1,6 @@
 ---
 layout: col-sidebar
-title: "Top 10 Mobile Risks - OWASP Draft List 2023- Beta 2"
+title: "Top 10 Mobile Risks - OWASP Draft List 2023- Beta 3"
 ---
 
 - [M1: Insecure Authentication/Authorization](m1-insecure-authentication-authorization.md)
@@ -14,7 +14,7 @@ title: "Top 10 Mobile Risks - OWASP Draft List 2023- Beta 2"
 - [M9: Insecure Data Storage](m9-insecure-data-storage)
 - [M10: Insufficient Binary Protections](m10-insufficient-binary-protection.md)
 
-## Vulnerabilities which didn't make the place on Beta 2 Draft list, but in future we may consider them.
+## Vulnerabilities which didn't make the place on Beta 3 Draft list, but in future we may consider them.
 
 * Data Leakage
 * Hardcoded Secrets
