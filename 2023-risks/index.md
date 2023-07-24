@@ -3,7 +3,7 @@ layout: col-sidebar
 title: "Top 10 Mobile Risks - OWASP Draft List 2023- Beta 2"
 ---
 
-- [M1: Insecure Authentication/Authorization](m1-insecure-authentication-authorization)
+- [M1: Insecure Authentication/Authorization](m1-insecure-authentication-authorization.md)
 - [M2: Insecure Communication](m2-insecure-communication)
 - [M3: Inadequate Supply Chain Security](m3-inadequate-supply-chain-security)
 - [M4: Inadequate Privacy Controls](m4-inadequate-privacy-controls)
