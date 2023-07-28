@@ -26,14 +26,14 @@ More updates to follow soon...
 
 # Top 10 Mobile Risks Beta 3 Draft 2023
 - [M1: Insecure Authentication/Authorization](2023-risks/m1-insecure-authentication-authorization.md)
-- [M2: Insecure Communication](m2-insecure-communication)
+- [M2: Insecure Communication](2023-risks/m2-insecure-communication.md)
 - [M3: Inadequate Supply Chain Security](2023-risks/m3-inadequate-supply-chain-security.md)
 - [M4: Inadequate Privacy Controls](2023-risks/m4-inadequate-privacy-controls.md)
 - [M5: Improper Credential Usage](2023-risks/m5-improper-credential-usage.md)
-- [M6: Insufficient Input/Output Validation](m6-insufficient-io-validation)
+- [M6: Insufficient Input/Output Validation](2023-risks/M6:-Draft-Insufficient-Input-Output-Validation.md)
 - [M7: Security Misconfiguration](m7-security-misconfiguration)
 - [M8: Insufficient Cryptography](m8-insufficient-cryptography)
-- [M9: Insecure Data Storage](m9-insecure-data-storage)
+- [M9: Insecure Data Storage](2023-risks/M9:-Insecure-Data-Storage.md)
 - [M10: Insufficient Binary Protections](2023-risks/m10-insufficient-binary-protection.md)
 
 ## Vulnerabilities which didn't make the place on Beta 3 Draft list, but in future we may consider them.
