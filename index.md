@@ -31,8 +31,8 @@ More updates to follow soon...
 - [M4: Inadequate Privacy Controls](2023-risks/m4-inadequate-privacy-controls.md)
 - [M5: Improper Credential Usage](2023-risks/m5-improper-credential-usage.md)
 - [M6: Insufficient Input/Output Validation](2023-risks/m6-insufficient-input-output-validation.md)
-- [M7: Security Misconfiguration](m7-security-misconfiguration)
-- [M8: Insufficient Cryptography](m8-insufficient-cryptography)
+- [M7: Security Misconfiguration](2023-risks/m7-security-misconfiguration.md)
+- [M8: Insufficient Cryptography](2023-risks/m8-insufficient-cryptography.md)
 - [M9: Insecure Data Storage](2023-risks/m9-insecure-data-storage.md)
 - [M10: Insufficient Binary Protections](2023-risks/m10-insufficient-binary-protection.md)
 
