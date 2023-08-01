@@ -8,20 +8,20 @@ title: "M8: Insufficient Cryptography"
 
 **Application Specific**
 
-Individuals who possess physical proximity to data that has been inadequately encrypted or mobile malware that operates on behalf of an adversary can compromise the security of the system.
+Threat agents who exploit insecure cryptography in mobile applications can undermine the confidentiality, integrity, and authenticity of sensitive information. These threat agents include attackers who target cryptographic algorithms or implementations to decrypt sensitive data, malicious insiders who manipulate cryptographic processes or leak encryption keys, state-sponsored actors engaged in cryptanalysis for intelligence purposes, cybercriminals who exploit weak encryption to steal valuable data or conduct financial fraud, and attackers who leverage vulnerabilities in cryptographic protocols or libraries.
 
 # Attack vectors
 
 **Exploitability Average**
 
-Any API call that is accessible to potential attackers can be exploited as an attack vector. An attack vector refers to a specific method or pathway through which an attacker can gain unauthorized access, manipulate data, or compromise the security of the mobile application.
+The attack vector for insecure cryptography in a mobile application involves exploiting vulnerabilities in the cryptographic mechanisms used to protect sensitive information. Adversaries may employ various techniques, such as cryptographic attacks, brute force attacks, or side-channel attacks, to exploit weaknesses in encryption algorithms, key management, or implementation flaws. By targeting insecure cryptography, attackers aim to decrypt encrypted data, manipulate cryptographic processes, or gain unauthorized access to sensitive information. This can lead to data breaches, unauthorized access to user accounts, compromised confidentiality, or the ability to forge or tamper with data.
 
 # Security weakness
 
 **Prevalence COMMON** <br /> 
 **Detectability Average**
 
-To exploit this vulnerability, an adversary must effectively decrypt encrypted code or sensitive data, exposing it in an unencrypted form. This vulnerability arises from weak encryption algorithms or flaws present within the encryption process itself.
+Insecure cryptography in a mobile application introduces security weaknesses that can undermine the effectiveness of cryptographic measures and compromise the confidentiality and integrity of sensitive data. These weaknesses may include using weak encryption algorithms or inadequate key lengths, poor key management practices, improper handling of encryption keys, insecure random number generation, flawed implementation of cryptographic protocols, or vulnerabilities in cryptographic libraries or frameworks. Attackers can exploit these weaknesses to bypass encryption, perform cryptographic attacks, manipulate data, or gain unauthorized access to encrypted information. Insecure hash functions and cryptographic algorithms pose significant security weaknesses in mobile applications. These vulnerabilities can lead to serious data breaches and unauthorized access to sensitive information. When outdated or weak hash functions are used, attackers can exploit the flaws to reverse-engineer hashed data, revealing the original content. To protect mobile applications from these security risks, it is essential to adopt strong and modern hash functions and cryptographic algorithms, as well as follow best practices in encryption and key management to ensure data integrity and confidentiality. Regular security audits and updates are also crucial to maintain the highest level of protection against potential threats.
 
 # Technical Impact 
 
@@ -33,11 +33,11 @@ This vulnerability will result in the unauthorized retrieval of sensitive inform
 
 **Application / Business Specific**
 
-Insufficient cryptography in a mobile application can have significant business impacts. Here are some potential consequences:
+Insufficient cryptography or insecure hash functions in a mobile application can have significant business impacts. Here are some potential consequences:
 
-**Data Breach**: Weak or insufficient cryptography can make it easier for attackers to compromise the confidentiality of sensitive data stored or transmitted by the mobile application. This can result in a data breach, leading to the exposure of sensitive customer information, such as personal identifiable information (PII), financial details, or intellectual property. Such breaches can lead to legal liabilities, regulatory penalties, loss of customer trust, and reputational damage.
+**Data Breach**: Weak or insufficient cryptography can make it easier for adversaries to compromise the confidentiality of sensitive data stored or transmitted by the mobile application. This can result in a data breach, leading to the exposure of sensitive customer information, such as personal identifiable information (PII), financial details, or intellectual property. Such breaches can lead to legal liabilities, regulatory penalties, loss of customer trust, and reputational damage.
 
-**Loss of Intellectual Property**: Inadequate cryptography can jeopardize the protection of proprietary algorithms, trade secrets, or other intellectual property embedded within the mobile application. If attackers are able to decrypt and extract this valuable information, it can be exploited for competitive advantage by rival companies or sold on the black market.
+**Loss of Intellectual Property**: Inadequate cryptography can jeopardize the protection of proprietary algorithms, trade secrets, or other intellectual property embedded within the mobile application. If adversaries are able to decrypt and extract this valuable information, it can be exploited for competitive advantage by rival companies or sold on the black market.
 
 **Financial Losses**: Insufficient cryptography can lead to financial losses in multiple ways. For instance, if payment transactions or financial data are improperly encrypted, it can expose customers to fraud and unauthorized access to their funds. Additionally, the costs associated with investigating and remediating security breaches, compensating affected customers, and addressing legal ramifications can be substantial.
 
@@ -45,7 +45,7 @@ Insufficient cryptography in a mobile application can have significant business 
 
 # Am I Vulnerable To 'Insufficient Cryptography'?
 
-There are several ways in which insecure cryptography can manifest in a mobile application:
+There are several ways in which insecure cryptography and insecure hash functions can manifest in a mobile application:
 
 **Weak Encryption Algorithms**: The mobile app may use encryption algorithms that are known to be weak or vulnerable to attacks. These algorithms may have known weaknesses, be outdated, or lack the necessary level of security to protect sensitive data effectively.
 
@@ -55,11 +55,13 @@ There are several ways in which insecure cryptography can manifest in a mobile a
 
 **Flawed Encryption Implementation**: The encryption/decryption process itself may be implemented incorrectly or contain programming flaws. These implementation errors can introduce vulnerabilities that attackers can exploit to bypass or weaken the encryption protections.
 
-**Insecure Storage of Encryption Keys**: If the encryption keys are stored insecurely on the mobile device, such as in plain text or in easily accessible locations, attackers with physical or unauthorized access to the device can retrieve the keys and decrypt the protected data.
+**Insecure Storage of Data/Encryption Keys**: If the encryption keys are stored insecurely on the mobile device, such as in plain text or in easily accessible locations, attackers with physical or unauthorized access to the device can retrieve the keys and decrypt the protected data.The mobile application utilizes a weak encryption algorithm or uses encryption incorrectly, such as using a weak key or failing to properly encrypt all sensitive data. This can result in compromised data if the encryption is easily bypassed or decrypted by an attacker.
 
 **Lack of Secure Transport Layer**: When transmitting encrypted data over networks, it is crucial to use secure transport layer protocols like HTTPS. If the mobile app fails to implement secure transport protocols, encrypted data may be vulnerable to interception or tampering during transmission.
 
 **Insufficient Validation and Authentication**: Inadequate validation and authentication of parties involved in the encryption process can weaken the overall security. Without proper validation, attackers can impersonate legitimate entities, intercept encrypted data, and manipulate it without detection.
+
+**Lack of Salting**: Salting, the process of adding random data to the input before hashing, is essential for enhancing the security of passwords. Insecure hash functions may not support salting or may use weak salting methods, making password hashes susceptible to attacks like pre-computed tables or brute-force attacks.
 
 # How Do I Prevent ‘Insufficient Cryptography’?
 
@@ -84,6 +86,12 @@ To prevent "insufficient cryptography" vulnerabilities in the mobile application
 **Conduct Security Testing**: Perform thorough security testing, including cryptographic vulnerability assessments, penetration testing, and code reviews. Identify and remediate any weaknesses or vulnerabilities discovered during the testing process.
 
 **Follow Industry Standards and Best Practices**: Stay updated with industry standards and best practices related to cryptography. Organizations like NIST (National Institute of Standards and Technology) and IETF (Internet Engineering Task Force) provide guidelines and recommendations for secure cryptographic practices.
+
+**Use Strong Hash Functions**: Choose widely recognized and cryptographically secure hash functions like SHA-256 or bcrypt. These algorithms are designed to resist attacks and provide a high level of security.
+
+**Implement Salting**: Always use a strong random salt when hashing passwords. Salting adds an extra layer of security by making it harder for attackers to use precomputed tables or rainbow tables to crack passwords.
+
+**Use Key Derivation Functions (KDFs)**: For password hashing, use Key Derivation Functions like PBKDF2, bcrypt, or scrypt. These functions are specifically designed for securely deriving cryptographic keys from passwords and provide additional security features like iteration counts to slow down brute-force attacks.
 
 # Example Attack Scenarios
 
