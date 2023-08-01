@@ -68,6 +68,8 @@ Mobile apps are vulnerable to security misconfigurations if they have not been p
 - Weak or absent access controls: Allowing unauthorized access to sensitive functionality or data.
 - Failure to update or patch: Not applying necessary security updates or patches to the app or underlying components.
 - Improper storage of sensitive data: Storing sensitive data in plain text or weakly protected formats.
+- Insecure file provider path settings: a file content provider that was meant for internal application use is exposed to other apps or users, which could potentially compromise sensitive data or allow unauthorized access to application resources.
+- Exported activities: an activity that is meant for internal application use is exported and/or browsable, which exposes an additional attack surface.
 
 To determine if your app is vulnerable to security misconfigurations, you should conduct a thorough security assessment, including code review, security testing, and configuration analysis.
 
@@ -82,7 +84,7 @@ Preventing security misconfigurations in mobile apps requires following secure c
 - Secure network configuration: Disallow cleartext traffic and use certificate pinning when possible.
 - Disable Debugging: Disable debugging features in the production version of the app.
 - Disable backup mode (Android): By disabling backup mode on Android devices, you prevent the inclusion of app data in the device's backup, ensuring that sensitive data from the app is not stored in the device backup.
-
+- Limit application attack surface by only exporting activities, content providers and services that are necessary to be exported
 
 # Example Attack Scenarios
 
@@ -92,17 +94,17 @@ The following scenarios showcase security misconfigurations in mobile apps:
 
 A mobile app is released with default settings that have weak security configurations enabled. This includes using insecure communication protocols, leaving default usernames and passwords unchanged, and not disabling debugging features in release builds. Attackers exploit these misconfigurations to gain unauthorized access to sensitive data or perform malicious actions.
 
-**Scenario #2:** Improper access controls.
+**Scenario #2:** Insecure file provider path settings.
 
-A mobile app lacks proper access controls, allowing unauthorized users to access sensitive functionality or data. This could lead to unauthorized access to user accounts, exposure of confidential information, or misuse of privileged actions.
+A mobile app exposes its root path in an exported file content provider, allowing other apps to access its resources.
 
 **Scenario #3:** Overly permissive storage permissions.
 
 A mobile app that stores application shared preferences with world-readable permissions, allowing other apps to read them
 
-**Scenario #4:** Missing jailbreak/root detection.
+**Scenario #4:** Exported activity.
 
-A mobile app does not incorporate jailbreak or root detection mechanisms. This oversight makes the app susceptible to potential tampering by malicious users with rooted or jailbroken devices, allowing them to bypass security controls, compromise the app's integrity, or extract sensitive data.
+A mobile app exports some activity that is meant for internal use, giving attackers extra attack surface to the application.
 
 **Scenario #5:**  Unnecessary permissions.
 
