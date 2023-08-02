@@ -102,9 +102,9 @@ To prevent "insufficient cryptography" vulnerabilities in the mobile application
 
 **Scenario #3:** Cryptographic Downgrade Attacks - Mobile applications may support multiple encryption protocols or algorithms to establish secure connections. If weak cryptography is allowed as a fallback option, attackers can exploit this weakness and force the application to use weak encryption. As a result, they can decrypt the intercepted data more easily and launch subsequent attacks.
 
-**Scenario #4:**Key Management Vulnerabilities - Weak key management practices can undermine the security of the cryptographic systems used in mobile applications. For example, if encryption keys are stored insecurely or are easily guessable, attackers can gain unauthorized access to the keys and decrypt the encrypted data. This can result in data breaches and privacy violations.
+**Scenario #4:** Key Management Vulnerabilities - Weak key management practices can undermine the security of the cryptographic systems used in mobile applications. For example, if encryption keys are stored insecurely or are easily guessable, attackers can gain unauthorized access to the keys and decrypt the encrypted data. This can result in data breaches and privacy violations.
 
-**Scenario #5:**Crypto Implementation Flaws - Weak cryptography can also stem from implementation flaws in the mobile application itself. These flaws may include incorrect usage of cryptographic libraries, insecure key generation, improper random number generation, or insecure handling of encryption-related functions. Attackers can exploit these flaws to bypass or weaken the encryption protections.
+**Scenario #5:** Crypto Implementation Flaws - Weak cryptography can also stem from implementation flaws in the mobile application itself. These flaws may include incorrect usage of cryptographic libraries, insecure key generation, improper random number generation, or insecure handling of encryption-related functions. Attackers can exploit these flaws to bypass or weaken the encryption protections.
 
 # References
 
