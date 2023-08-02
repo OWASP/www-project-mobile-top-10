@@ -12,7 +12,7 @@ Threat agents who exploit insecure cryptography in mobile applications can under
 
 # Attack vectors
 
-**Exploitability Average**
+**Exploitability AVERAGE**
 
 The attack vector for insecure cryptography in a mobile application involves exploiting vulnerabilities in the cryptographic mechanisms used to protect sensitive information. Adversaries may employ various techniques, such as cryptographic attacks, brute force attacks, or side-channel attacks, to exploit weaknesses in encryption algorithms, key management, or implementation flaws. By targeting insecure cryptography, attackers aim to decrypt encrypted data, manipulate cryptographic processes, or gain unauthorized access to sensitive information. This can lead to data breaches, unauthorized access to user accounts, compromised confidentiality, or the ability to forge or tamper with data.
 
