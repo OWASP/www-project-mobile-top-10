@@ -67,4 +67,7 @@ Based on the analysis, prioritization, and validation, we create the final OWASP
 | Category          | Date          | Description                                                                                   |
 |-------------------|---------------|-----------------------------------------------------------------------------------------------|
 | Data Collection   | Apr 12, 2023  | Collection of vulnerabilities metrics from Public reports on HackerOne, Ostorlab and CVEs.    |
-| Initial Release   | Aug 02, 2023  | Initial release for public review (after Beta 3 release was revisited and detailed)            |
+| Alpha Release     | Jun 8, 2023   | Alpha version of the OWASP Mobile Top 10 pending feedback and comments.                       |
+| Beta Release      | Jul 2, 2023   | Beta version of the OWASP Mobile Top 10 pending final comments.                               |
+| Initial Release   | AUG 2, 2023   | Official initial release of the OWASP Mobile Top 10.                                          |
+
