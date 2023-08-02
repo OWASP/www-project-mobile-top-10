@@ -16,7 +16,7 @@ Inadequate output validation can result in data corruption or presentation vulne
 
 # Attack Vectors	
 
-**Exploitability HIGH**
+**Exploitability DIFFICULT**
 
 Insufficient input/output validation exposes our application to critical attack vectors, including SQL injection, XSS, command injection and path traversal. These vulnerabilities can lead to unauthorized access, data manipulation, code execution, and compromise of the entire backend system. 
 
