@@ -16,7 +16,7 @@ This report highlights the importance of following a comprehensive and unbiased 
 | Milan Singh Thakur |  Apr 14, 2023  |    Review     |
 | Kunwar Atul        |  Apr 14, 2023  |    Review     |
 | Mohamed Benchikh   |  Apr 14, 2023  |    Review     |
-| Mohammad Junaid    |  Apr 14, 2023  |    Review     | 
+| Mohammed Junaid Tariq   |  Apr 14, 2023  |    Review     | 
 
 ## Methodology
 ### Data Collection
