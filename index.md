@@ -11,20 +11,20 @@ type: documentation
 
 # Mobile Top 10 2023: Updates
 
-The new Mobile Top 10 list for 2023 are being worked upon. We would love to see you participate and contribute to the research we are doing.<br>
+The new Mobile Top 10 list for 2023 is being worked upon. We would love to see you participate and contribute to the research we are doing.<br>
 <b>[Join the SLACK Channel](https://app.slack.com/client/T04T40NHX/C02L2BNTBLP)</b><br>
 
-If you face any issue joining us on Slack, please feel free to reachout to Project Leads.
+If you face any issues joining us on Slack, please feel free to reach out to Project Leads.
 
 Let's get started!
 
-Join us on the slack channel for contributions!!
+Join us on the Slack channel for contributions!!
 
 More updates to follow soon...
 
-<b> Below is the OWASP Mobile Top-10 2023 Beta 3 Draft </b>
+<b> Below is the OWASP Mobile Top-10 2023 Initial Release </b>
 
-# Top 10 Mobile Risks Beta 3 Draft 2023
+# Top 10 Mobile Risks - Initial Release 2023
 - [M1: Insecure Authentication/Authorization](2023-risks/m1-insecure-authentication-authorization.md)
 - [M2: Insecure Communication](2023-risks/m2-insecure-communication.md)
 - [M3: Inadequate Supply Chain Security](2023-risks/m3-inadequate-supply-chain-security.md)
@@ -36,7 +36,7 @@ More updates to follow soon...
 - [M9: Insecure Data Storage](2023-risks/m9-insecure-data-storage.md)
 - [M10: Insufficient Binary Protections](2023-risks/m10-insufficient-binary-protection.md)
 
-## Vulnerabilities which didn't make the place on Beta 3 Draft list, but in future we may consider them.
+## Vulnerabilities that didn't make the place on the initial release list, but in the future, we may consider them.
 
 * Data Leakage
 * Hardcoded Secrets
