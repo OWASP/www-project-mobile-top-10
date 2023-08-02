@@ -1,11 +1,3 @@
----
-title: 2023-Top-10-Updates
-layout:  col-sidebar
-tab: true
-order: 4
-tags: 2023-updates-tag
----
-
 ![OWASP logo](https://owasp.org/assets/images/logo.png)
 
 # OWASP Mobile Top 10 Methodology
@@ -20,11 +12,12 @@ This report highlights the importance of following a comprehensive and unbiased 
 ## Update History
 | Author             |      Date      |     Update    |
 | :----------------  |    :------:    |     -----:    |
-| Alaeddine Mesbahi  |  Apr 13, 2023  |  First Draft  |
-| Milan Singh Thakur |  Apr 14, 2023  |    Review     |
-| Kunwar Atul        |  Apr 14, 2023  |    Review     |
-| Mohamed Benchikh   |  Apr 14, 2023  |    Review     |
-| Mohammad Junaid    |  Apr 14, 2023  |    Review     | 
+| Alaeddine Mesbahi  |  July 26, 2023  |  Initial Release  |
+| Kunwar Atul        |  July 26, 2023  |    Initial Release     |
+| Mohamed Benchikh   |  July 26, 2023  |    Initial Release     |
+| Mohammed Junaid Tariq   |  July 26, 2023  |    Initial Release     | 
+| Milan Singh Thakur |  Aug 02, 2023  |    Final Review     |
+
 
 ## Methodology
 ### Data Collection
@@ -74,3 +67,7 @@ Based on the analysis, prioritization, and validation, we create the final OWASP
 | Category          | Date          | Description                                                                                   |
 |-------------------|---------------|-----------------------------------------------------------------------------------------------|
 | Data Collection   | Apr 12, 2023  | Collection of vulnerabilities metrics from Public reports on HackerOne, Ostorlab and CVEs.    |
+| Alpha Release     | Jun 8, 2023   | Alpha version of the OWASP Mobile Top 10 pending feedback and comments.                       |
+| Beta Release      | Jul 2, 2023   | Beta version of the OWASP Mobile Top 10 pending final comments.                               |
+| Initial Release   | Aug 2, 2023   | Official initial release of the OWASP Mobile Top 10.                                          |
+
