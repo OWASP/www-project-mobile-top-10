@@ -12,11 +12,12 @@ This report highlights the importance of following a comprehensive and unbiased 
 ## Update History
 | Author             |      Date      |     Update    |
 | :----------------  |    :------:    |     -----:    |
-| Alaeddine Mesbahi  |  Apr 13, 2023  |  First Draft  |
-| Milan Singh Thakur |  Apr 14, 2023  |    Review     |
-| Kunwar Atul        |  Apr 14, 2023  |    Review     |
-| Mohamed Benchikh   |  Apr 14, 2023  |    Review     |
-| Mohammed Junaid Tariq   |  Apr 14, 2023  |    Review     | 
+| Alaeddine Mesbahi  |  July 26, 2023  |  Initial Release  |
+| Kunwar Atul        |  July 26, 2023  |    Initial Release     |
+| Mohamed Benchikh   |  July 26, 2023  |    Initial Release     |
+| Mohammed Junaid Tariq   |  July 26, 2023  |    Initial Release     | 
+| Milan Singh Thakur |  Aug 02, 2023  |    Final Review     |
+
 
 ## Methodology
 ### Data Collection
