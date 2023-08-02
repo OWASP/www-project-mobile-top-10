@@ -11,7 +11,7 @@ Security misconfiguration in mobile apps refers to the improper configuration of
 
 # Attack Vectors
 
-**Exploitability HIGH**
+**Exploitability DIFFICULT**
 
 Security misconfigurations in mobile apps can be exploited through various attack vectors, including:
 
