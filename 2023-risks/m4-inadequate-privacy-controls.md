@@ -20,7 +20,7 @@ In general, PII could either be leaked (i.e., a violation of confidentiality), m
 
 # Attack Vectors	
 
-**Exploitability MEDIUM**
+**Exploitability AVERAGE**
 
 Typical sources for PII are well protected, e.g., the sandbox of the app, the network communication with the server, the app's logs and backups. Some have less protection but are still hard to access, like URL query parameters and clipboard content. 
 
