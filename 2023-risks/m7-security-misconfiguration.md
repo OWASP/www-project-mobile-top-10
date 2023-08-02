@@ -26,6 +26,7 @@ Security misconfigurations in mobile apps can be exploited through various attac
 # Security Weakness
 
 **Prevalence COMMON**  
+
 **Detectability EASY**
 
 Security misconfigurations are common in mobile apps due to factors such as time constraints, lack of awareness, or human error during development. Detecting security misconfigurations is relatively easy through manual code review, security testing, or automated scanning tools.
@@ -39,7 +40,7 @@ Examples of security misconfigurations include:
 
 # Technical Impacts
 
-**Impact HIGH**
+**Impact SEVERE**
 
 Security misconfigurations can have significant technical impacts on mobile apps, including:
 

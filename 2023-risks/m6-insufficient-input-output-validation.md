@@ -22,7 +22,8 @@ Insufficient input/output validation exposes our application to critical attack 
 
 # Security Weakness	
 
-**Prevalence COMMON** <br />
+**Prevalence COMMON**
+
 **Detectability EASY**
 
 Insufficient input/output validation vulnerability occurs when an application fails to properly check and sanitize user input or validate and sanitize output data. This vulnerability can be exploited in the following ways:
@@ -39,7 +40,8 @@ These vulnerabilities often arise from errors in application logic, incomplete i
 
 # Technical Impacts
 
-**Impact Severe** <br />
+**Impact SEVERE**
+
 
 Insufficient input/output validation vulnerability can have several technical impacts on the affected application:
 
@@ -58,7 +60,7 @@ Insufficient input/output validation vulnerability can have several technical im
 
 # Business Impacts
 	
-**Application/Business Specific** 
+**Impact SEVERE**
 
 Insufficient input/output validation vulnerability has significant technical and business implications. From an application standpoint, the impacts include:
 

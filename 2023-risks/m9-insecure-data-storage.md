@@ -22,7 +22,8 @@ Overall, insecure data storage on a mobile application opens avenues for attacks
 
 # Security weakness
 
-**Prevalence COMMON** <br /> 
+**Prevalence COMMON**
+
 **Detectability AVERAGE**
 
 Insecure data storage in a mobile application encompasses various security weaknesses that can jeopardise the confidentiality and integrity of stored information. These weaknesses include the use of weak or nonexistent encryption, allowing attackers to easily access and decipher sensitive data. Additionally, storing data in easily accessible locations within the device's filesystem, such as plain text files or unprotected databases, exposes it to unauthorised extraction or manipulation. Insufficient access controls and user authentication mechanisms further compound the problem, enabling unauthorised individuals to gain access to sensitive data. 
@@ -32,7 +33,7 @@ Furthermore, the absence of secure data transmission protocols leaves data vulne
 
 # Technical Impact 
 
-**Impact Severe**
+**Impact SEVERE**
 
 Insecure data storage on a mobile application can have significant technical impacts that undermine the overall security and functionality of the app. These impacts include:
 
@@ -51,7 +52,7 @@ Insecure data storage on a mobile application can have significant technical imp
 
 # Business Impacts 
 
-**Application / Business Specific**
+**Impact SEVERE**
 
 The business impact of insecure data storage on a mobile application can be significant and wide-ranging. Here are some key business impacts:
 

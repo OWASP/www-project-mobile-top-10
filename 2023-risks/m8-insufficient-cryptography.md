@@ -18,20 +18,21 @@ The attack vector for insecure cryptography in a mobile application involves exp
 
 # Security weakness
 
-**Prevalence COMMON** <br /> 
-**Detectability Average**
+**Prevalence COMMON**
+
+**Detectability AVERAGE**
 
 Insecure cryptography in a mobile application introduces security weaknesses that can undermine the effectiveness of cryptographic measures and compromise the confidentiality and integrity of sensitive data. These weaknesses may include using weak encryption algorithms or inadequate key lengths, poor key management practices, improper handling of encryption keys, insecure random number generation, flawed implementation of cryptographic protocols, or vulnerabilities in cryptographic libraries or frameworks. Attackers can exploit these weaknesses to bypass encryption, perform cryptographic attacks, manipulate data, or gain unauthorized access to encrypted information. Insecure hash functions and cryptographic algorithms pose significant security weaknesses in mobile applications. These vulnerabilities can lead to serious data breaches and unauthorized access to sensitive information. When outdated or weak hash functions are used, attackers can exploit the flaws to reverse-engineer hashed data, revealing the original content. To protect mobile applications from these security risks, it is essential to adopt strong and modern hash functions and cryptographic algorithms, as well as follow best practices in encryption and key management to ensure data integrity and confidentiality. Regular security audits and updates are also crucial to maintain the highest level of protection against potential threats.
 
 # Technical Impact 
 
-**Impact Severe**
+**Impact SEVERE**
 
 This vulnerability will result in the unauthorized retrieval of sensitive information from the mobile device.
 
 # Business Impacts
 
-**Application / Business Specific**
+**Impact SEVERE**
 
 Insufficient cryptography or insecure hash functions in a mobile application can have significant business impacts. Here are some potential consequences:
 

@@ -18,7 +18,8 @@ Once the adversary understands the vulnerabilities in either the authentication 
 
 # Security Weakness
 
-**Prevalence COMMON** <br />
+**Prevalence COMMON**
+
 **Detectability AVERAGE**
 
 In order to test for poor authorization and authentication schemes in mobile apps, a number of strategies can be employed by testers. For authorization, testers can perform binary attacks against the mobile app and try to execute  privileged functionality that should only be executable with a user of higher privilege, particularly while the mobile app is in 'offline' mode. Testers should also attempt to execute any privileged functionality using a low-privilege session token within the corresponding POST/GET requests for the sensitive functionality to the backend server.
@@ -43,7 +44,7 @@ Moreover, failures in authentication can also expose underlying authorization fa
 
 # Business Impacts
 
-**Application / Business Specific**
+**Impact SEVERE**
 
 The business impact of poor authentication and authorization will typically result in the following at a minimum:
 
@@ -60,22 +61,22 @@ Insecure authorization can occur when an organization fails to authenticate an i
 
 Here are some straightforward indicators of insecure authorization:
 
-* __Presence of Insecure Direct Object Reference (IDOR) vulnerabilities__ - Noticing an IDOR vulnerability may suggest that the code isn't conducting a proper authorization check.
-* __Hidden Endpoints__ - Developers might neglect authorization checks on backend hidden functionality, assuming that the hidden functionality will only be accessed by a user with the appropriate role.
-* __User Role or Permission Transmissions__ - Should the mobile app transmit the user's roles or permissions to a backend system as part of a request, this could signal insecure authorization.
+* **Presence of Insecure Direct Object Reference (IDOR) vulnerabilities** - Noticing an IDOR vulnerability may suggest that the code isn't conducting a proper authorization check.
+* **Hidden Endpoints** - Developers might neglect authorization checks on backend hidden functionality, assuming that the hidden functionality will only be accessed by a user with the appropriate role.
+* **User Role or Permission Transmissions** - Should the mobile app transmit the user's roles or permissions to a backend system as part of a request, this could signal insecure authorization.
 
 Similarly, mobile apps can exhibit various signs of insecure authentication:
 
-* __Anonymous Backend API Execution__ - The ability of the app to execute a backend API service request without providing an access token may point to insecure authentication.
-* __Local Storage of Passwords or Shared Secrets__ - If the app stores any passwords or shared secrets locally on the device, this could be a sign of insecure authentication.
-* __Weak Password Policy__ - The use of a simplified password-entering process may imply insecure authentication.
-* __Usage of Features like FaceID and TouchID__ - Employing features like FaceID or TouchID could be indicative of insecure authentication.
+* **Anonymous Backend API Execution** - The ability of the app to execute a backend API service request without providing an access token may point to insecure authentication.
+* **Local Storage of Passwords or Shared Secrets** - If the app stores any passwords or shared secrets locally on the device, this could be a sign of insecure authentication.
+* **Weak Password Policy** - The use of a simplified password-entering process may imply insecure authentication.
+* **Usage of Features like FaceID and TouchID** - Employing features like FaceID or TouchID could be indicative of insecure authentication.
 
 # How Do I Prevent 'Insecure Authentication and Authorization'?
 
 To prevent both insecure authentication and authorization, it's crucial to avoid weak patterns and reinforce secure measures.
 
-__Avoid Weak Patterns__
+**Avoid Weak Patterns**
 
 Insecure Mobile Application Authentication Design Patterns should be avoided:
 
@@ -89,13 +90,13 @@ Insecure Mobile Application Authentication Design Patterns should be avoided:
 * Persistent authentication within mobile applications should be implemented as an opt-in and not enabled by default.
 * Where possible, refrain from allowing users to provide 4-digit PIN numbers for authentication passwords.
 
-__Reinforce Authentication__
+**Reinforce Authentication**
 
 * Developers should assume that all client-side authorization and authentication controls can be bypassed by malicious users. Server-side reinforcement of these controls is critical.
 * Due to offline usage requirements, mobile apps might need to perform local authentication or authorization checks. In such cases, developers should instrument local integrity checks to detect any unauthorized code changes. Consult additional guidance on detecting and reacting to binary attacks.
 * Use FaceID and TouchID to unlock biometrically locked secrets and securely protect sensitive authentication materials, like session tokens.
 
-__Insecure Authorization Prevention__
+**Insecure Authorization Prevention**
 
 To avoid insecure authorization:
 

@@ -19,6 +19,7 @@ Adversaries can exploit vulnerabilities in both hardcoded credentials and improp
 # Security Weakness
 
 **Prevalence COMMON**
+
 **Detectability EASY**
 
 Poor implementation of credential management, such as using hardcoded credentials and improper handling, can lead to severe security weaknesses. A comprehensive security testing process should aim to identify these issues. For instance, security testers should attempt to identify hardcoded credentials within the mobile app's source code or within any configuration files.
@@ -31,33 +32,33 @@ Poor credential management can lead to several significant technical impacts. Un
 
 # Business Impacts
 
-**Application / Business Specific**
+**Impact SEVERE**
 
 The business impact of poor credential management, including hardcoded credentials and improper credential usage, can be substantial:
 
-- Reputation Damage;
-- Information Theft;
-- Fraud;
-- Unauthorized Access to Data.
+* Reputation Damage;
+* Information Theft;
+* Fraud;
+* Unauthorized Access to Data.
 
 # Am I Vulnerable To 'Improper Credential Usage'?
 
 Insecure credential management can occur when mobile apps use hardcoded credentials or when credentials are misused. Here are some indicators that your mobile app may be vulnerable:
 
-* __Hardcoded Credentials__ - If the mobile app contains hardcoded credentials within the app's source code or any configuration files, this is a clear indicator of vulnerability.
-* __Insecure Credential Transmission__ - If credentials are transmitted without encryption or through insecure channels, this could indicate a vulnerability.
-* __Insecure Credential Storage__ - If the mobile app stores user credentials on the device in an insecure manner, this could represent a vulnerability.
-* __Weak User Authentication__ - If user authentication relies on weak protocols or allows for easy bypassing, this could be a sign of vulnerability.
+* **Hardcoded Credentials** - If the mobile app contains hardcoded credentials within the app's source code or any configuration files, this is a clear indicator of vulnerability.
+* **Insecure Credential Transmission** - If credentials are transmitted without encryption or through insecure channels, this could indicate a vulnerability.
+* **Insecure Credential Storage** - If the mobile app stores user credentials on the device in an insecure manner, this could represent a vulnerability.
+* **Weak User Authentication** - If user authentication relies on weak protocols or allows for easy bypassing, this could be a sign of vulnerability.
 
 # How Do I Prevent 'Improper Credentials Usage'?
 
 Avoiding insecure credential management involves not using hardcoded credentials and properly handling user credentials.
 
-__Avoid Using Hardcoded Credentials__
+**Avoid Using Hardcoded Credentials**
 
 Hardcoded credentials can be easily discovered by attackers and provide an easy access point for unauthorized users. Always avoid using hardcoded credentials in your mobile app's code or configuration files.
 
-__Properly Handle User Credentials__
+**Properly Handle User Credentials**
 
 User credentials should always be stored, transmitted, and authenticated securely:
 

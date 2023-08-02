@@ -19,9 +19,9 @@ Most modern mobile applications exchange data with one or more remote servers. W
 
 While modern applications do reply on cryptographic protocols such as SSL/TLS, they can sometimes have flaws in their implementations like: 
 
-- Using deprecated protocols and/or bad configuration settings;
-- Accepting bad ssl certificates (self-signed, revoked, expired, wrong host...); or
-- Inconsistency (having SSL/TLS only on select workflows such as authentication).
+* Using deprecated protocols and/or bad configuration settings;
+* Accepting bad ssl certificates (self-signed, revoked, expired, wrong host...); or
+* Inconsistency (having SSL/TLS only on select workflows such as authentication).
 
 
 # Security Weakness	
@@ -40,15 +40,15 @@ This flaw can expose user data which might lead to account takeover, user impers
 
 # Business Impacts
 	
-**Application / Business Specific** 
+**Impact MODERATE** 
 
 At a minimum, interception of sensitive data through a communication channel will result in a privacy violation.
 
 The violation of a user's confidentiality may result in:
 
-- Identity theft;
-- Fraud, or
-- Reputational Damage.
+* Identity theft;
+* Fraud, or
+* Reputational Damage.
 
 # Am I Vulnerable To 'Insecure Communication'?
 
@@ -66,35 +66,35 @@ The usual risks of insecure communication are around data integrity, data confid
 
 **General Best Practices**
 
-- Assume that the network layer is not secure and is susceptible to eavesdropping.
-- Apply SSL/TLS to transport channels that the mobile app will use to transmit data to a backend API or web service.
-- Account for outside entities like third-party analytics companies, social networks, etc. by using their SSL versions when an application runs a routine via the browser/webkit. Avoid mixed SSL sessions as they may expose the user’s session ID.
-- Use strong, industry standard cipher suites with appropriate key lengths.
-- Use certificates signed by a trusted CA provider.
-- Never allow bad certificates (self-signed, expired, untrusted root, revoked, wrong host..).
-- Consider certificate pinning.
-- Always require SSL chain verification.
-- Only establish a secure connection after verifying the identity of the endpoint server using trusted certificates in the key chain.
-- Alert users through the UI if the mobile app detects an invalid certificate.
-- Do not send sensitive data over alternate channels (e.g, SMS, MMS, or notifications).
-- If possible, apply a separate layer of encryption to any sensitive data before it is given to the SSL channel. In the event that future vulnerabilities are discovered in the SSL implementation, the encrypted data will provide a secondary defense against confidentiality violation.
-- During development cycles, avoid overriding SSL verification methods to allow untrusted certificates, instead try using self-signed certificates or a local development certificate authority (CA)
-- During security assessments, it is advised to analyze application traffic to see if any traffic goes through plaintext channels  
+* Assume that the network layer is not secure and is susceptible to eavesdropping.
+* Apply SSL/TLS to transport channels that the mobile app will use to transmit data to a backend API or web service.
+* Account for outside entities like third-party analytics companies, social networks, etc. by using their SSL versions when an application runs a routine via the browser/webkit. Avoid mixed SSL sessions as they may expose the user’s session ID.
+* Use strong, industry standard cipher suites with appropriate key lengths.
+* Use certificates signed by a trusted CA provider.
+* Never allow bad certificates (self-signed, expired, untrusted root, revoked, wrong host..).
+* Consider certificate pinning.
+* Always require SSL chain verification.
+* Only establish a secure connection after verifying the identity of the endpoint server using trusted certificates in the key chain.
+* Alert users through the UI if the mobile app detects an invalid certificate.
+* Do not send sensitive data over alternate channels (e.g, SMS, MMS, or notifications).
+* If possible, apply a separate layer of encryption to any sensitive data before it is given to the SSL channel. In the event that future vulnerabilities are discovered in the SSL implementation, the encrypted data will provide a secondary defense against confidentiality violation.
+* During development cycles, avoid overriding SSL verification methods to allow untrusted certificates, instead try using self-signed certificates or a local development certificate authority (CA)
+* During security assessments, it is advised to analyze application traffic to see if any traffic goes through plaintext channels  
 
 **iOS Specific Best Practices**
 
 Default classes in the latest version of iOS handle SSL cipher strength negotiation very well. Trouble comes when developers temporarily add code to bypass these defaults to accommodate development hurdles. In addition to the above general practices:
 
-- Ensure that certificates are valid and fail closed.
-- When using `CFNetwork`, consider using the Secure Transport API to designate trusted client certificates. In almost all situations, `NSStreamSocketSecurityLevelTLSv1` should be used for higher standard cipher strength.
-- After development, ensure all `NSURL` calls (or wrappers of `NSURL`) do not allow self signed or invalid certificates such as the `NSURL` class method `setAllowsAnyHTTPSCertificate`.
-- Consider using certificate pinning by doing the following: export your certificate, include it in your app bundle, and anchor it to your trust object. Using the NSURL method `connection:willSendRequestForAuthenticationChallenge`: will now accept your cert.
+* Ensure that certificates are valid and fail closed.
+* When using `CFNetwork`, consider using the Secure Transport API to designate trusted client certificates. In almost all situations, `NSStreamSocketSecurityLevelTLSv1` should be used for higher standard cipher strength.
+* After development, ensure all `NSURL` calls (or wrappers of `NSURL`) do not allow self signed or invalid certificates such as the `NSURL` class method `setAllowsAnyHTTPSCertificate`.
+* Consider using certificate pinning by doing the following: export your certificate, include it in your app bundle, and anchor it to your trust object. Using the NSURL method `connection:willSendRequestForAuthenticationChallenge`: will now accept your cert.
 
 **Android Specific Best Practices**
 
-- Remove all code after the development cycle that may allow the application to accept all certificates such as org.apache.http.conn.ssl.AllowAllHostnameVerifier or SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER. These are equivalent to trusting all certificates.
-- If using a class which extends SSLSocketFactory, make sure checkServerTrusted method is properly implemented so that server certificate is correctly checked.
-- Avoid overriding `onReceivedSslError` to allow invalid SSL certificates
+* Remove all code after the development cycle that may allow the application to accept all certificates such as org.apache.http.conn.ssl.AllowAllHostnameVerifier or SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER. These are equivalent to trusting all certificates.
+* If using a class which extends SSLSocketFactory, make sure checkServerTrusted method is properly implemented so that server certificate is correctly checked.
+* Avoid overriding `onReceivedSslError` to allow invalid SSL certificates
 
 # Example Attack Scenarios
 

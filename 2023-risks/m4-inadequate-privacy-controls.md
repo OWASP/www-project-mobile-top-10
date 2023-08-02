@@ -29,7 +29,8 @@ Obtaining PII thus requires the attacker to first breach security on another lev
 
 # Security Weakness	
 
-**Prevalence COMMON** <br/>
+**Prevalence COMMON**
+
 **Detectability EASY**
 
 Almost all apps process some kind of PII. Many even collect and process more than they need to fulfill their purpose, which makes them more attractive as a target without business needs. 
@@ -54,10 +55,10 @@ If user data is manipulated it might render the system unusable for that user. T
 
 The extent and severity of the business impact, which a privacy violation has, strongly depends on the number of affected users, the criticality of the affected data, and the data protection regulations that apply where the violation happened. The business impact of privacy violations will typically result in the following at a minimum: 
 
-- Violation of legal regulations
-- Financial damage due to victims' lawsuits 
-- Reputational damage 
-- Loss or theft of PII 
+* Violation of legal regulations
+* Financial damage due to victims' lawsuits 
+* Reputational damage 
+* Loss or theft of PII 
 
 Regulations are the biggest issue regarding privacy controls. GDPR (Europe), CCPA (California, US), PDPA (Singapore), PIPEDA (Canada), LGPD (Brazil), Data Protection Act 2018 (UK), POPIA (South Africa), PDPL (China) are examples of relevant regulations with known sanctions against companies for not protecting their users' data. 
 
