@@ -14,7 +14,7 @@ These threat agents exploit vulnerabilities like weak encryption, insufficient d
 
 # Attack vectors
 
-**Exploitability Easy**
+**Exploitability EASY**
 
 Insecure data storage in a mobile application exposes vulnerabilities to various attack vectors that threat actors can exploit. Attack vectors include unauthorised access to the device's file system through physical or remote means, exploiting weak encryption or lack thereof, intercepting data transmissions, and leveraging malware or malicious apps installed on the device. Additionally, rooted or jailbroken devices provide an opportunity for attackers to bypass security measures and gain direct access to sensitive data. Other attack vectors include social engineering techniques to deceive users into providing access to their data or manipulating the application's behaviour. 
 
