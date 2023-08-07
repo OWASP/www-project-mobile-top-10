@@ -121,6 +121,7 @@ Hence, both settings should be explicitly set for apps to make the developers' i
   - [User Privacy Protection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
   - [Testing User Privacy Protection (MASTG)](https://mas.owasp.org/MASTG/General/0x04i-Testing-User-Privacy-Protection/)
   - [OWASP Top 10 Privacy Risks](https://owasp.org/www-project-top-10-privacy-risks/)
+  - [OWASP Top 10 for Large Language Models: LLM06: Sensitive Information Disclosure](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - External
   - [EU General Data Protection Regulation](https://gdpr.eu/)
   - [External References](http://cwe.mitre.org/)
