@@ -110,3 +110,11 @@ A mobile app exports some activity that is meant for internal use, giving attack
 **Scenario #5:**  Unnecessary permissions.
 
 A mobile app requests excessive permissions that are not essential for its core functionality. For instance, a simple flashlight app requesting access to the user's contacts, location, and camera. This exposes user data to unnecessary risks, as the app could potentially misuse the granted permissions or unintentionally leak sensitive information.
+
+# References
+
+- OWASP
+  - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0xa8-security-misconfiguration/)
+  - [OWASP Top 10](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
+- External
+  - [External References](http://cwe.mitre.org/)
