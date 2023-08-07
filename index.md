@@ -37,8 +37,7 @@ More updates to follow soon...
 - [M10: Insufficient Binary Protections](2023-risks/m10-insufficient-binary-protection.md)
 
 ## Comparison between 2016 and 2023
-![image description](/2023-risks/assets/images/comparison-owasp-10.png)
-
+<img src="/2023-risks/assets/images/comparison-owasp-10.png" style=" width:900px ; height:300px " alt="Comparison between 2016-2023"> 
 
 ## Vulnerabilities that didn't make the place on the initial release list, but in the future, we may consider them.
 
