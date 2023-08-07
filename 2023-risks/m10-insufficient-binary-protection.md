@@ -56,11 +56,11 @@ Yet, manipulation has even more impact on the technical soundness of a system. B
 	
 **Impact MODERATE**
 
-Leakage of API keys for commercial APIs or similar can cause significant costs if they are misused on a large scale. Even more, if intellectual property, like algorithms or AI models that have been developed with great effort, becomes public, the business model of the app developers may be threatened. 
+Leakage of API keys for commercial APIs or similar can cause significant costs if they are misused on a large scale. The same holds for apps that are tampered with to remove license checks or to publish their functionality with a competing app. In both cases, individuals cracking an app or stealing an API key for personal use will likely go unnoticed. However at scale, for example when API keys or even functionality is systematically used with other apps, malicious competitors might get a significant advantage because they have significantly lower costs.
 
-The same holds for apps that are tampered with to remove license checks or to publish their functionality with a competing app. 
+The business model of the app developers may be threatened even more if intellectual property, like algorithms or AI models that have been developed with great effort, becomes public or is stolen by a malicious competitor.
 
-Great reputational damage could arise in particular for popular apps that get redistributed with malicious code. 
+Great reputational damage could arise in particular for popular apps that get redistributed with malicious code. Even though the app provider can hardly prevent redistribution of a tampered copy of its app, the negative publicity will likely be directed at the original provider. Hence, redistribution of unauthorized copies should be made as difficult as possible for an attacker to reduce the probability of this risk.
 
 
 # Am I Vulnerable To 'Insufficient Binary Protection'?
@@ -101,6 +101,7 @@ Apps always run in untrusted execution environments and should only get the leas
   - [Tampering and Reverse Engineering iOS (MASTG)](https://mas.owasp.org/MASTG/iOS/0x06c-Reverse-Engineering-and-Tampering/)
   - [Tampering and Reverse Engineering Android (MASTG)](https://mas.owasp.org/MASTG/Android/0x05c-Reverse-Engineering-and-Tampering/)
   - [OWASP Reverse Engineering and Code Modification Prevention Project](https://wiki.owasp.org/index.php/OWASP_Reverse_Engineering_and_Code_Modification_Prevention_Project)
+  - [OWASP Top 10 for Large Language Models: LLM10: Model Theft](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 
 - External
   - [External References](http://cwe.mitre.org/)
