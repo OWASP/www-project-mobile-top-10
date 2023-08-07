@@ -55,12 +55,13 @@ If user data is manipulated it might render the system unusable for that user. T
 
 The extent and severity of the business impact, which a privacy violation has, strongly depends on the number of affected users, the criticality of the affected data, and the data protection regulations that apply where the violation happened. The business impact of privacy violations will typically result in the following at a minimum: 
 
-* Violation of legal regulations
-* Financial damage due to victims' lawsuits 
-* Reputational damage 
-* Loss or theft of PII 
+**Violation of legal regulations:** Regulations are the biggest issue regarding privacy controls. GDPR (Europe), CCPA (California, US), PDPA (Singapore), PIPEDA (Canada), LGPD (Brazil), Data Protection Act 2018 (UK), POPIA (South Africa), PDPL (China) are examples of relevant regulations with known sanctions against companies for not protecting their users' data. 
 
-Regulations are the biggest issue regarding privacy controls. GDPR (Europe), CCPA (California, US), PDPA (Singapore), PIPEDA (Canada), LGPD (Brazil), Data Protection Act 2018 (UK), POPIA (South Africa), PDPL (China) are examples of relevant regulations with known sanctions against companies for not protecting their users' data. 
+**Financial damage due to victims' lawsuits:** Whoever is personally affected by a privacy violation might sue the app provider that let the violation happen. These lawsuits might be successful, depending on the legal regulations that apply and the ability of the provider to show that they hat adequate and up to date protection mechanisms in place.
+
+**Reputational damage:** If a privacy violation affects users on a large scale, it is likely published in media, thus, generating negative publicity for the provider of the app. As a consequence, sales and usage for the app and even other, unrelated products of the same provider might drop.
+
+**Loss or theft of PII:** Actual information stolen might be misused, even for attacks on the provider of the app. For example, specific user data could be used to employ a social engineering attack on the provider by impersonating a victim.
 
 
 # Am I Vulnerable To 'Inadequate Privacy Controls'?
@@ -124,4 +125,3 @@ Hence, both settings should be explicitly set for apps to make the developers' i
   - [OWASP Top 10 for Large Language Models: LLM06: Sensitive Information Disclosure](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - External
   - [EU General Data Protection Regulation](https://gdpr.eu/)
-  - [External References](http://cwe.mitre.org/)
