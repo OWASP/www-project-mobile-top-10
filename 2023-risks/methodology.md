@@ -15,7 +15,8 @@ This report highlights the importance of following a comprehensive and unbiased 
 | Alaeddine Mesbahi  |  July 26, 2023  |  Initial Release  |
 | Kunwar Atul        |  July 26, 2023  |    Initial Release     |
 | Mohamed Benchikh   |  July 26, 2023  |    Initial Release     |
-| Mohammed Junaid Tariq   |  July 26, 2023  |    Initial Release     | 
+| Mohammed Junaid Tariq   |  July 26, 2023  |    Initial Release     |
+| Steffen Lortz   |  July 26, 2023  |    Initial Release     |
 | Milan Singh Thakur |  Aug 02, 2023  |    Final Review     |
 
 
