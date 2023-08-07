@@ -101,6 +101,7 @@ Apps always run in untrusted execution environments and should only get the leas
   - [Tampering and Reverse Engineering iOS (MASTG)](https://mas.owasp.org/MASTG/iOS/0x06c-Reverse-Engineering-and-Tampering/)
   - [Tampering and Reverse Engineering Android (MASTG)](https://mas.owasp.org/MASTG/Android/0x05c-Reverse-Engineering-and-Tampering/)
   - [OWASP Reverse Engineering and Code Modification Prevention Project](https://wiki.owasp.org/index.php/OWASP_Reverse_Engineering_and_Code_Modification_Prevention_Project)
+  - [OWASP Top 10 for Large Language Models: LLM10: Model Theft](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 
 - External
   - [External References](http://cwe.mitre.org/)
