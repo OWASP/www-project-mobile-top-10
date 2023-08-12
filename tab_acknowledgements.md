@@ -12,14 +12,14 @@ This page is a work in progress. If we have omitted you, or incorrectly affiliat
 
 # Project Leads
 - [Milan Singh Thakur](milan@owasp.org)
-- [Alaeddine MESBAHI](https://www.linkedin.com/in/alaeddine-mesbahi-2608681a/)
-- [Kunwar Atul](https://www.linkedin.com/in/kunwaratulhax0r/)
-- [Mohamed Benchikh](https://www.linkedin.com/in/mohamedbenchikh/)
+- [Alaeddine MESBAHI](mailto:alaeddine.mesbahi@ostorlab.dev)
+- [Kunwar Atul](mailto:kunwaratulhax0r@gmail.com)
+- [Mohamed Benchikh](mailto:mohamed.benchikh@ostorlab.dev)
 
 
 ## Top Contributors
-- [Mohammed Junaid Tariq](https://www.linkedin.com/in/emjeh)
-- [Steffen Lortz](https://www.linkedin.com/in/steffen-lortz/)
+- [Mohammed Junaid Tariq](mailto:imohammedjunaid26@gmail.com)
+- [Steffen Lortz](mailto:steffen.lortz@maibornwolff.de)
 
 
 ### Past Project Leads
