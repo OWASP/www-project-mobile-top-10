@@ -2,7 +2,7 @@
 
 * [Milan Singh Thakur](mailto:milan@owasp.org)
 * [Alaeddine MESBAHI](mailto:alaeddine.mesbahi@ostorlab.dev)
-* [Kunwar Atul](mailto:kunwaratulhax0r@gmail.com)
+* [Kunwar Atul](mailto:kunwar.atul@owasp.org)
 * [Mohamed Benchikh](mailto:mohamed.benchikh@ostorlab.dev)
 
 ### Top Contributors
