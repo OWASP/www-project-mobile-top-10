@@ -66,7 +66,7 @@ The business impact of insecure data storage on a mobile application can be sign
 
 **Competitive disadvantage**: In today's highly competitive landscape, organisations that experience data breaches or have a reputation for insecure data storage can face a competitive disadvantage. Customers are increasingly concerned about the security of their data, and they may choose competitors who have a better track record of safeguarding sensitive information.
 
-# Am I Vulnerable To 'Insufficient Cryptography'?
+# Am I Vulnerable To 'Insecure Data Storage'?
 
 Insecure data storage and unintended data leakage in a mobile application can manifest in several ways, leading to potential privacy breaches and unauthorised access to sensitive information. Here are common manifestations of these issues:
 
@@ -87,7 +87,7 @@ Insecure data storage and unintended data leakage in a mobile application can ma
 **Unintended Data Sharing**: Improper handling of data sharing features within the application can result in unintended data leakage. If sensitive data is shared with unintended recipients or if the sharing process is not adequately secured, it can lead to privacy breaches.
 
 
-# How Do I Prevent ‘Insufficient Cryptography’?
+# How Do I Prevent ‘Insecure Data Storage’?
 
 To prevent insecure data storage in a mobile application and ensure the protection of sensitive data, the following security measures should be implemented:
 
