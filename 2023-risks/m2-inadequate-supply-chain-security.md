@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M3: Inadequate Supply Chain Security"
+title: "M2: Inadequate Supply Chain Security"
 ---
 
 # Threat Agents
