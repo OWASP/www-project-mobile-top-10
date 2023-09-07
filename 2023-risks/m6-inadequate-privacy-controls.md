@@ -1,6 +1,6 @@
 ---
 layout: col-sidebar
-title: "M4: Inadequate Privacy Controls"
+title: "M6: Inadequate Privacy Controls"
 ---
 
 # Threat Agents
