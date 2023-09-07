@@ -39,7 +39,6 @@ More updates to follow soon...
 ## Comparison between 2016 and 2023
 ![image description](/2023-risks/assets/images/comparison-owasp-10.png)
 
-
 ## Vulnerabilities that didn't make the place on the initial release list, but in the future, we may consider them.
 
 * Data Leakage
