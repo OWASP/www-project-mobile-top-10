@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M10: Insufficient Binary Protection"
+title: "M7: Insufficient Binary Protection"
 ---
 
 # Threat Agents
