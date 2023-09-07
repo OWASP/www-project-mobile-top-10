@@ -70,9 +70,9 @@ An app can only be vulnerable to Inadequate Privacy Controls if it processes som
 
 Given an app that uses PII, it might expose it like any other sensitive data. This most notably happens through 
 
-- Insecure data storage and communication (cf. [M2](m2-insecure-communication), [M9](m9-insecure-data-storage)),
-- Data access with insecure authentification and authorization (cf. [M1](m1-insecure-authentication-authorization), [M5](m5-improper-credential-usage)), and
-- Insider attacks on the app's sandbox (cf. [M3](m3-inadequate-supply-chain-security), [M6](m6-insufficient-input-output-validation), [M7](m7-security-misconfiguration)).
+- Insecure data storage and communication (cf. [M5](m5-insecure-communication), [M9](m9-insecure-data-storage)),
+- Data access with insecure authentification and authorization (cf. [M3](m3-insecure-authentication-authorization), [M1](m1-improper-credential-usage)), and
+- Insider attacks on the app's sandbox (cf. [M2](m2-inadequate-supply-chain-security), [M4](m4-insufficient-input-output-validation), [M8](m8-security-misconfiguration)).
 
 The other OWASP Mobile Top 10 risks provide deeper insights on how an app might be vulnerable to the different attack vectors.
 
