@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M6: Insufficient Input/Output Validation"
+title: "M4: Insufficient Input/Output Validation"
 ---
 
 # Threat Agents
