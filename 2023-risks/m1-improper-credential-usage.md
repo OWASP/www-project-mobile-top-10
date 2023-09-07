@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M5: Improper Credential Usage"
+title: "M1: Improper Credential Usage"
 ---
 
 # Threat Agents
