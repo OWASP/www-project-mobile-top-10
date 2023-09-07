@@ -1,6 +1,6 @@
 ---
 layout: col-sidebar
-title: "M2: Insecure Communication"
+title: "M5: Insecure Communication"
 ---
 
 # Threat Agents
