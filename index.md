@@ -25,16 +25,16 @@ More updates to follow soon...
 <b> Below is the OWASP Mobile Top-10 2023 Initial Release </b>
 
 # Top 10 Mobile Risks - Initial Release 2023
-- [M1: Insecure Authentication/Authorization](2023-risks/m1-insecure-authentication-authorization.md)
-- [M2: Insecure Communication](2023-risks/m2-insecure-communication.md)
-- [M3: Inadequate Supply Chain Security](2023-risks/m3-inadequate-supply-chain-security.md)
-- [M4: Inadequate Privacy Controls](2023-risks/m4-inadequate-privacy-controls.md)
-- [M5: Improper Credential Usage](2023-risks/m5-improper-credential-usage.md)
-- [M6: Insufficient Input/Output Validation](2023-risks/m6-insufficient-input-output-validation.md)
-- [M7: Security Misconfiguration](2023-risks/m7-security-misconfiguration.md)
-- [M8: Insufficient Cryptography](2023-risks/m8-insufficient-cryptography.md)
+- [M1: Improper Credential Usage](2023-risks/m1-improper-credential-usage.md)
+- [M2: Inadequate Supply Chain Security](2023-risks/m2-inadequate-supply-chain-security.md)
+- [M3: Insecure Authentication/Authorization](2023-risks/m3-insecure-authentication-authorization.md)
+- [M4: Insufficient Input/Output Validation](2023-risks/m4-insufficient-input-output-validation.md)
+- [M5: Insecure Communication](2023-risks/m5-insecure-communication.md)
+- [M6: Inadequate Privacy Controls](2023-risks/m6-inadequate-privacy-controls.md)
+- [M7: Insufficient Binary Protections](2023-risks/m7-insufficient-binary-protection.md)
+- [M8: Security Misconfiguration](2023-risks/m8-security-misconfiguration.md)
 - [M9: Insecure Data Storage](2023-risks/m9-insecure-data-storage.md)
-- [M10: Insufficient Binary Protections](2023-risks/m10-insufficient-binary-protection.md)
+- [M10: Insufficient Cryptography](2023-risks/m10-insufficient-cryptography.md)
 
 ## Comparison between 2016 and 2023
 ![image description](/2023-risks/assets/images/comparison-owasp-10.png)
