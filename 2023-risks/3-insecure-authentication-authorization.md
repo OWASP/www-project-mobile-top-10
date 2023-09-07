@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M1: Insecure Authentication/Authorization"
+title: "M3: Insecure Authentication/Authorization"
 ---
 
 # Threat Agents
