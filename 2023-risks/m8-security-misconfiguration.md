@@ -1,6 +1,6 @@
 ---
 layout: col-sidebar
-title: "M7: Security Misconfiguration"
+title: "M8: Security Misconfiguration"
 ---
 
 # Threat Agents
