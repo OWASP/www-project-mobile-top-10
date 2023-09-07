@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M8: Insufficient Cryptography"
+title: "M10: Insufficient Cryptography"
 ---
 
 # Threat Agents
