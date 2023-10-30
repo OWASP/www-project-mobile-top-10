@@ -100,23 +100,23 @@ Default classes in the latest version of iOS handle SSL cipher strength negotiat
 
 There are a few common scenarios that penetration testers frequently discover when inspecting a mobile app's communication security:
 
-**Scenario #1** Lack of certificate inspection
+**Lack of certificate inspection**
 
  The mobile app and an endpoint successfully connect and perform a TLS handshake to establish a secure channel. However, the mobile app fails to inspect the certificate offered by the server and the mobile app unconditionally accepts any certificate offered to it by the server. This destroys any mutual authentication capability between the mobile app and the endpoint. The mobile app is susceptible to man-in-the-middle attacks through a TLS proxy.
 
-**Scenario #2** Weak handshake negotiation
+**Weak handshake negotiation**
 
  The mobile app and an endpoint successfully connect and negotiate a cipher suite as part of the connection handshake. The client successfully negotiates with the server to use a weak cipher suite that results in weak encryption that can be easily decrypted by the adversary. This jeopardizes the confidentiality of the channel between the mobile app and the endpoint.
 
-**Scenario #3** Privacy information leakage
+**Privacy information leakage**
 
  The mobile app transmits personally identifiable information to an endpoint via non-secure channels instead of over SSL/TLS. This jeopardizes the confidentiality of any privacy-related data between the mobile app and the endpoint.
 
-**Scenario #4** Credential information leakage
+**Credential information leakage**
 
  The mobile app transmits user credentials to an endpoint via non-secure channels instead of over SSL/TLS. This allows an adversary to intercept those credentials in cleartext.
 
-**Scenario #5** Two-Factor authentication bypass
+**Two-Factor authentication bypass**
 
  The mobile app receives a session identifier from an endpoint via non-secure channels instead of over SSL/TLS. This allows an adversary to bypass two-factor authentication by using the intercepted session identifier.
 
