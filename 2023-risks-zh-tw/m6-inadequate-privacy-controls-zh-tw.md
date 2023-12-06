@@ -70,9 +70,9 @@ PII (個人身份信息) 的典型來源通常受到良好的保護，例如應�
 應用程式只有在處理某些形式的可識別個人資訊時，才有可能存在不足的隱私控制。這幾乎總是成立的：客戶端應用程式的 IP 位址對伺服器是可見的，應用程式的使用日誌，以及隨著崩潰報告或分析一同發送的詮釋資料都可應用於大多數應用程式。通常，一個應用程式會從其用戶那裡收集和處理更多敏感的個人資訊，如帳戶信息、付款數據、位置等。
 
 對於使用個人識別資訊的應用程式，它可能像處理其他敏感數據一樣公開這些資訊。這最明顯地發生在以下情況下：
-- 不安全的資料存儲與通信 (cf. [M5](m5-不安全的通信), [M9](m9-不安全的資料存儲)),
-- 使用不安全的身份驗證和授權進行數據訪問 (cf. [M3](m3-不安全的身分驗證與授權), [M1](m1-不當的憑證使用))
-- 針對應用程式沙盒的內部人攻擊 (cf. [M2](m2-供應鏈安全不足), [M4](m4-不足的輸入或輸出合法性檢查), [M8](m8-安全性配置錯誤)).
+- 不安全的資料存儲與通信 (cf. [M5](m5-insecure-communication-zh-tw.md), [M9](m9-insecure-data-storage-zh-tw.md)),
+- 使用不安全的身份驗證和授權進行數據訪問 (cf. [M3](m3-insecure-authentication-authorization-zh-tw.md), [M1](m1-improper-credential-usage-zh-tw.md))
+- 針對應用程式沙盒的內部人攻擊 (cf. [M2](m2-inadequate-supply-chain-security-zh-tw.md), [M4](m4-insufficient-input-output-validation-zh-tw.md), [M8](m8-security-misconfiguration-zh-tw.md)).
 
 OWASP 行動裝置安全性十大風險的其他項目提供了更深入的見解，說明一個應用程式可能如何容易受到不同攻擊媒介的威脅。
 

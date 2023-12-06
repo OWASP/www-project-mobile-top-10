@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: "M7: 不足的二進制檔案保護"
+title: "M7: 不足的二進制保護"
 ---
 
 # 威脅主體
