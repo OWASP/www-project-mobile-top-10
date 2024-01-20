@@ -1,6 +1,6 @@
 ---
 layout: col-sidebar
-title: "Top 10 Mobile Risks - OWASP Draft List 2024- Beta 3"
+title: "Top 10 Mobile Risks - OWASP Mobile Top 10 2024 - Final Release"
 ---
 
 - [M1: Improper Credential Usage](m1-improper-credential-usage.md)
@@ -15,10 +15,10 @@ title: "Top 10 Mobile Risks - OWASP Draft List 2024- Beta 3"
 - [M10: Insufficient Cryptography](m10-insufficient-cryptography.md)
 
 ## Comparison between 2016 and 2024
-![image description](/2024-risks/assets/images/comparison-owasp-10.png)
+![image description](/2023-risks/assets/images/comparison-owasp-10.png)
 
 
-## Vulnerabilities which didn't make the place on Beta 3 Draft list, but in future we may consider them.
+## Vulnerabilities which didn't make the place on Final Top 10 list, but in future we may consider them.
 
 * Data Leakage
 * Hardcoded Secrets
