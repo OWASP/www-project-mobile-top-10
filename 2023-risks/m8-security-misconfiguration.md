@@ -114,7 +114,7 @@ A mobile app requests excessive permissions that are not essential for its core 
 # References
 
 - OWASP
-  - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0xa8-security-misconfiguration/)
+  - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2024/en/0xa8-security-misconfiguration/)
   - [OWASP Top 10](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
 - External
   - [External References](http://cwe.mitre.org/)
