@@ -18,6 +18,7 @@ This report highlights the importance of following a comprehensive and unbiased 
 | Mohammed Junaid Tariq   |  July 26, 2023  |    Initial Release     |
 | Steffen Lortz   |  July 26, 2023  |    Initial Release     |
 | Milan Singh Thakur |  Aug 02, 2023  |    Final Review     |
+| OMT Team |  Jan 10, 2024  |    Final Release Review     |
 
 
 ## Methodology
@@ -71,4 +72,6 @@ Based on the analysis, prioritization, and validation, we create the final OWASP
 | Alpha Release     | Jun 8, 2023   | Alpha version of the OWASP Mobile Top 10 pending feedback and comments.                       |
 | Beta Release      | Jul 2, 2023   | Beta version of the OWASP Mobile Top 10 pending final comments.                               |
 | Initial Release   | Aug 2, 2023   | Official initial release of the OWASP Mobile Top 10.                                          |
+| Final Release   | Jan 22, 2024   | Official Final release of the OWASP Mobile Top 10 2024.                                          |
+
 
