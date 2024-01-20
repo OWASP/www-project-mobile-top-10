@@ -23,9 +23,13 @@ Join us on the Slack channel for contributions!!
 
 More updates to follow soon...
 
-<b> Below is the OWASP Mobile Top-10 2023 Initial Release </b>
+<b> Below is the OWASP Mobile Top-10 2024 Release </b>
 
 # Top 10 Mobile Risks - Final release 2024
+
+![OMT_2024_v2](https://github.com/OWASP/www-project-mobile-top-10/assets/24164478/db242831-df71-400e-8947-f6a888bf9cc4)
+
+
 - [M1: Improper Credential Usage](2023-risks/m1-improper-credential-usage.md)
 - [M2: Inadequate Supply Chain Security](2023-risks/m2-inadequate-supply-chain-security.md)
 - [M3: Insecure Authentication/Authorization](2023-risks/m3-insecure-authentication-authorization.md)
