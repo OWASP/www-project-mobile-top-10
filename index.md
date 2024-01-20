@@ -27,7 +27,7 @@ More updates to follow soon...
 
 # Top 10 Mobile Risks - Final release 2024
 
-![OMT_2024_v2](https://github.com/OWASP/www-project-mobile-top-10/assets/24164478/db242831-df71-400e-8947-f6a888bf9cc4)
+![OMT_2024_v2](assets/images/OMT_2024_v2.png)
 
 
 - [M1: Improper Credential Usage](2023-risks/m1-improper-credential-usage.md)
