@@ -29,7 +29,6 @@ More updates to follow soon...
 
 ![OMT_2024_v2](assets/images/OMT_2024_v2.png)
 
-
 - [M1: Improper Credential Usage](2023-risks/m1-improper-credential-usage.md)
 - [M2: Inadequate Supply Chain Security](2023-risks/m2-inadequate-supply-chain-security.md)
 - [M3: Insecure Authentication/Authorization](2023-risks/m3-insecure-authentication-authorization.md)
