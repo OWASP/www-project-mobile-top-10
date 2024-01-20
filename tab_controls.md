@@ -1,7 +1,7 @@
 ---
 title: Controls
 layout:  null
-tab: true
+tab: false
 order: 2
 tags: controls-tag
 ---
