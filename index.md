@@ -9,9 +9,10 @@ type: documentation
 ---
 ![OWASP logo](https://owasp.org/assets/images/logo.png)
 
-# Mobile Top 10 2023: Updates
+# Mobile Top 10 2024: Final Release Updates
 
-The new Mobile Top 10 list for 2023 is being worked upon. We would love to see you participate and contribute to the research we are doing.<br>
+The new Mobile Top 10 list for 2024 is out now. 
+We would love to see you participate and contribute to the research we are doing.<br>
 <b>[Join the SLACK Channel](https://app.slack.com/client/T04T40NHX/C02L2BNTBLP)</b><br>
 
 If you face any issues joining us on Slack, please feel free to reach out to Project Leads.
@@ -24,7 +25,7 @@ More updates to follow soon...
 
 <b> Below is the OWASP Mobile Top-10 2023 Initial Release </b>
 
-# Top 10 Mobile Risks - Initial Release 2023
+# Top 10 Mobile Risks - Final release 2024
 - [M1: Improper Credential Usage](2023-risks/m1-improper-credential-usage.md)
 - [M2: Inadequate Supply Chain Security](2023-risks/m2-inadequate-supply-chain-security.md)
 - [M3: Insecure Authentication/Authorization](2023-risks/m3-insecure-authentication-authorization.md)
@@ -36,7 +37,7 @@ More updates to follow soon...
 - [M9: Insecure Data Storage](2023-risks/m9-insecure-data-storage.md)
 - [M10: Insufficient Cryptography](2023-risks/m10-insufficient-cryptography.md)
 
-## Comparison between 2016 and 2023
+## Comparison between 2016 and 2024
 ![image description](/2023-risks/assets/images/comparison-owasp-10.png)
 
 ## Vulnerabilities that didn't make the place on the initial release list, but in the future, we may consider them.
