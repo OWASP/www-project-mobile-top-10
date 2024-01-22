@@ -52,9 +52,6 @@ More updates to follow soon...
 * Unprotected Endpoints (Deeplink, Activitity, Service ...)
 * Unsafe Sharing
 
-<b> Please note: Previous Work is shown below, 2023 Top 10 Final is still Work In Progress </b>
-
-
 # Top 10 Mobile Risks - Final List 2016
 
 - [M1: Improper Platform Usage](2016-risks/m1-improper-platform-usage)
