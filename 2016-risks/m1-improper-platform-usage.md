@@ -77,7 +77,7 @@ Below is a list vulnerability types that OWASP sees most often within mobile app
 - **Poor Web Services Hardening**
   - Logic flaws
     - [Testing for business logic flaws](https://www.owasp.org/index.php/Testing_for_business_logic_(OWASP-BL-001))
-    - [Business] Logic Security Cheat Sheet](https://www.owasp.org/index.php/Business_Logic_Security_Cheat_Sheet)
+    - [Business Logic Security Cheat Sheet](https://www.owasp.org/index.php/Business_Logic_Security_Cheat_Sheet)
   - Weak Authentication
     - [OWASP Top Ten Broken Authentication Section](https://www.owasp.org/index.php/Top_10_2013-A2-Broken_Authentication_and_Session_Management)
     - [Authentication Cheat Sheet](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
